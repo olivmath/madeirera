@@ -1,0 +1,543 @@
+{
+  "id": "santamadeira",
+  "name": "Santa Madeira",
+  "city": "Palhoça",
+  "url": "santamadeiracasas.com.br",
+  "platform": "WordPress + Elementor (theme hello-elementor, Yoast SEO)",
+  "scores": {
+    "UI": {
+      "max": 15,
+      "weighted": 12.0,
+      "subcriteria": {
+        "Profissionalismo": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Hierarquia": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Tipografia": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8
+        },
+        "Cores": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8
+        },
+        "Imagens": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Consistencia": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Layout": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Mobile": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        }
+      },
+      "notes": "Elementor com identidade visual coerente (verde de marca aplicado a scrollbar/seleção), fontes Google (Montserrat + Roboto Slab), hero em slideshow com Ken Burns, 8 H2 bem segmentados, imagens reais em webp comprimido, menu burger responsivo."
+    },
+    "UX": {
+      "max": 20,
+      "weighted": 14.6,
+      "subcriteria": {
+        "Encontrabilidade": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        },
+        "Navegacao": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Catalogo": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        },
+        "InfoProduto": {
+          "raw": 3,
+          "max": 3,
+          "weighted": 1.8
+        },
+        "Contato": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8
+        },
+        "WhatsApp": {
+          "raw": 5,
+          "max": 2,
+          "weighted": 2.0
+        },
+        "Orcamento": {
+          "raw": 2,
+          "max": 3,
+          "weighted": 1.2
+        },
+        "MobileUX": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Clareza": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8
+        }
+      },
+      "notes": "Catálogo segmentado por nº de dormitórios + chalés + módulos (pré-fabricado/wood concrete) no menu — boa arquitetura de navegação. Sem formulário nativo de orçamento visível nesta página nem calculadora/simulador; fluxo de conversão depende quase totalmente do WhatsApp (botão de cabeçalho + plugin de chat flutuante + conversão rastreada via Google Ads)."
+    },
+    "SEO": {
+      "max": 20,
+      "weighted": 12.6,
+      "subcriteria": {
+        "SEOTecnico": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        },
+        "TitlesMeta": {
+          "raw": 3,
+          "max": 2,
+          "weighted": 1.2
+        },
+        "Headings": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Conteudo": {
+          "raw": 3,
+          "max": 3,
+          "weighted": 1.8
+        },
+        "PagProduto": {
+          "raw": 3,
+          "max": 2,
+          "weighted": 1.2
+        },
+        "SEOLocal": {
+          "raw": 3,
+          "max": 3,
+          "weighted": 1.8
+        },
+        "GBP": {
+          "raw": 3,
+          "max": 1,
+          "weighted": 0.6
+        },
+        "Indexacao": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8
+        },
+        "Autoridade": {
+          "raw": 2,
+          "max": 0.5,
+          "weighted": 0.2
+        },
+        "DadosEstruturados": {
+          "raw": 5,
+          "max": 1,
+          "weighted": 1.0
+        }
+      },
+      "notes": "Yoast SEO ativo: canonical, robots, OG/Twitter card, JSON-LD graph completo (WebPage+WebSite+Organization+BreadcrumbList). Meta description tem erro de digitação ('Conate já!' em vez de 'Contate já!'). Menção repetida a 'Palhoça/SC' no conteúdo, mas sem NAP explícito/endereço nesta página nem embed de mapa/GBP visível — presença no Google inferida apenas pelo widget de avaliações (Trustindex)."
+    },
+    "Conversao": {
+      "max": 25,
+      "weighted": 16.2,
+      "subcriteria": {
+        "CTA": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        },
+        "WhatsApp": {
+          "raw": 5,
+          "max": 3,
+          "weighted": 3.0
+        },
+        "Orcamento": {
+          "raw": 2,
+          "max": 4,
+          "weighted": 1.6
+        },
+        "Formulario": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8
+        },
+        "Catalogo": {
+          "raw": 4,
+          "max": 3,
+          "weighted": 2.4
+        },
+        "Precos": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4
+        },
+        "Ecommerce": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4
+        },
+        "Lead": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "ProvaSocial": {
+          "raw": 5,
+          "max": 2,
+          "weighted": 2.0
+        },
+        "Diferenciais": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        }
+      },
+      "notes": "Ponto forte: prova social real (widget Trustindex/Google com nomes, fotos e 5 estrelas de clientes) e rastreamento de conversão via WhatsApp (gtag conversion + GTM). Ponto fraco: nenhum preço exibido, nenhuma loja/checkout, sem formulário de orçamento estruturado — CTA principal é apenas texto pré-preenchido de WhatsApp ('MONTE SUA CASA')."
+    },
+    "Tecnica": {
+      "max": 10,
+      "weighted": 5.8,
+      "subcriteria": {
+        "PerfMobile": {
+          "raw": 2,
+          "max": 3,
+          "weighted": 1.2
+        },
+        "PerfDesktop": {
+          "raw": 3,
+          "max": 1,
+          "weighted": 0.6
+        },
+        "CWV": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8
+        },
+        "Responsividade": {
+          "raw": 4,
+          "max": 2,
+          "weighted": 1.6
+        },
+        "Acessibilidade": {
+          "raw": 3,
+          "max": 1,
+          "weighted": 0.6
+        },
+        "HTTPS": {
+          "raw": 5,
+          "max": 1,
+          "weighted": 1.0
+        }
+      },
+      "notes": "Stack pesado (WordPress + Elementor + Elementor Pro + múltiplos plugins/CSS/JS carregados), tendência a CWV mediano apesar de imagens em WebP comprimidas. Skip-link e aria-labels presentes; parte das imagens (13) sem atributo alt preenchido."
+    },
+    "Recursos": {
+      "max": 10,
+      "weighted": 8,
+      "items": {
+        "HTTPS/SSL": 1,
+        "WhatsApp/chat integrado": 1,
+        "Dados estruturados (Schema.org)": 1,
+        "Blog/conteudo": 0,
+        "Formulario de contato nativo": 0,
+        "Galeria de projetos": 1,
+        "Redes sociais (FB/IG)": 1,
+        "Avaliacoes/Google Reviews": 1,
+        "Analytics/conversion tracking (GTM+Ads)": 1,
+        "Menu mobile responsivo": 1
+      },
+      "notes": "8/10 recursos presentes. Sem blog e sem formulário de contato nativo evidenciado nesta página (Contatos é página separada, não incluída na análise)."
+    }
+  },
+  "total": 69.2,
+  "highlights_positivos": [
+    "Schema JSON-LD completo (Organization, WebSite, WebPage, Breadcrumb) via Yoast",
+    "Prova social real com fotos, nomes e notas de clientes (widget Google/Trustindex)",
+    "Catálogo bem segmentado por número de dormitórios e tipo (chalés, wood concrete, pré-fabricado)",
+    "WhatsApp fortemente integrado com rastreamento de conversão (GTM + Google Ads)",
+    "HTTPS ativo, identidade visual consistente"
+  ],
+  "highlights_negativos": [
+    "Erro de digitação na meta description ('Conate já!')",
+    "Nenhum preço ou faixa de valor exibido",
+    "Sem formulário de orçamento/simulador — depende 100% do WhatsApp",
+    "Stack WordPress/Elementor pesado, risco de performance mobile baixa",
+    "Sem blog/conteúdo para SEO de cauda longa",
+    "13 imagens sem atributo alt preenchido (acessibilidade/SEO de imagem)"
+  ],
+  "classificacao": "Regular",
+  "ui": {
+    "score": 12.0,
+    "max": 15,
+    "details": {
+      "Profissionalismo": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Hierarquia": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Tipografia": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "Cores": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "Imagens": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Consistencia": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Layout": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Mobile": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      }
+    }
+  },
+  "ux": {
+    "score": 14.6,
+    "max": 20,
+    "details": {
+      "Encontrabilidade": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      },
+      "Navegacao": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Catalogo": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      },
+      "InfoProduto": {
+        "raw": 3,
+        "max": 3,
+        "weighted": 1.8
+      },
+      "Contato": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "WhatsApp": {
+        "raw": 5,
+        "max": 2,
+        "weighted": 2.0
+      },
+      "Orcamento": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2
+      },
+      "MobileUX": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Clareza": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      }
+    }
+  },
+  "seo": {
+    "score": 12.6,
+    "max": 20,
+    "details": {
+      "SEOTecnico": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      },
+      "TitlesMeta": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2
+      },
+      "Headings": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Conteudo": {
+        "raw": 3,
+        "max": 3,
+        "weighted": 1.8
+      },
+      "PagProduto": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2
+      },
+      "SEOLocal": {
+        "raw": 3,
+        "max": 3,
+        "weighted": 1.8
+      },
+      "GBP": {
+        "raw": 3,
+        "max": 1,
+        "weighted": 0.6
+      },
+      "Indexacao": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "Autoridade": {
+        "raw": 2,
+        "max": 0.5,
+        "weighted": 0.2
+      },
+      "DadosEstruturados": {
+        "raw": 5,
+        "max": 1,
+        "weighted": 1.0
+      }
+    }
+  },
+  "conversao": {
+    "score": 16.2,
+    "max": 25,
+    "details": {
+      "CTA": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      },
+      "WhatsApp": {
+        "raw": 5,
+        "max": 3,
+        "weighted": 3.0
+      },
+      "Orcamento": {
+        "raw": 2,
+        "max": 4,
+        "weighted": 1.6
+      },
+      "Formulario": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8
+      },
+      "Catalogo": {
+        "raw": 4,
+        "max": 3,
+        "weighted": 2.4
+      },
+      "Precos": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4
+      },
+      "Ecommerce": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4
+      },
+      "Lead": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "ProvaSocial": {
+        "raw": 5,
+        "max": 2,
+        "weighted": 2.0
+      },
+      "Diferenciais": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      }
+    }
+  },
+  "tecnica": {
+    "score": 5.8,
+    "max": 10,
+    "details": {
+      "PerfMobile": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2
+      },
+      "PerfDesktop": {
+        "raw": 3,
+        "max": 1,
+        "weighted": 0.6
+      },
+      "CWV": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8
+      },
+      "Responsividade": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "Acessibilidade": {
+        "raw": 3,
+        "max": 1,
+        "weighted": 0.6
+      },
+      "HTTPS": {
+        "raw": 5,
+        "max": 1,
+        "weighted": 1.0
+      }
+    }
+  },
+  "recursos": {
+    "score": 8.0,
+    "max": 10,
+    "details": {}
+  }
+}

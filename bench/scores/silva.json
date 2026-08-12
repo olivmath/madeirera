@@ -1,0 +1,246 @@
+{
+  "id": "silva",
+  "name": "Madeireira Silva",
+  "city": "Palhoça",
+  "url": "madeireirasilva.ind.br",
+  "ui": {
+    "score": 10.4,
+    "max": 15,
+    "details": {
+      "profissionalismo_confianca": {
+        "score": 4,
+        "max": 2
+      },
+      "hierarquia_visual": {
+        "score": 4,
+        "max": 2
+      },
+      "tipografia": {
+        "score": 3,
+        "max": 1
+      },
+      "cores_identidade": {
+        "score": 4,
+        "max": 1
+      },
+      "imagens": {
+        "score": 2,
+        "max": 2
+      },
+      "consistencia": {
+        "score": 4,
+        "max": 2
+      },
+      "layout": {
+        "score": 4,
+        "max": 2
+      },
+      "mobile": {
+        "score": 3,
+        "max": 3
+      }
+    }
+  },
+  "ux": {
+    "score": 12.0,
+    "max": 20,
+    "details": {
+      "encontrabilidade": {
+        "score": 4,
+        "max": 3
+      },
+      "navegacao": {
+        "score": 4,
+        "max": 2
+      },
+      "catalogo": {
+        "score": 2,
+        "max": 3
+      },
+      "info_produto": {
+        "score": 2,
+        "max": 3
+      },
+      "contato": {
+        "score": 4,
+        "max": 1
+      },
+      "whatsapp": {
+        "score": 4,
+        "max": 2
+      },
+      "orcamento": {
+        "score": 2,
+        "max": 3
+      },
+      "mobile_ux": {
+        "score": 3,
+        "max": 2
+      },
+      "clareza": {
+        "score": 4,
+        "max": 1
+      }
+    }
+  },
+  "seo": {
+    "score": 9.0,
+    "max": 20,
+    "confianca": "Médio",
+    "details": {
+      "seo_tecnico": {
+        "score": 2,
+        "max": 3
+      },
+      "titles_meta": {
+        "score": 2,
+        "max": 2
+      },
+      "headings": {
+        "score": 2,
+        "max": 2
+      },
+      "conteudo": {
+        "score": 2,
+        "max": 3
+      },
+      "paginas_produto": {
+        "score": 1,
+        "max": 2
+      },
+      "seo_local": {
+        "score": 3,
+        "max": 3
+      },
+      "gbp": {
+        "score": 4,
+        "max": 2
+      },
+      "indexacao": {
+        "score": 2,
+        "max": 1
+      },
+      "autoridade": {
+        "score": 3,
+        "max": 1
+      },
+      "dados_estruturados": {
+        "score": 1,
+        "max": 1
+      }
+    }
+  },
+  "conversao": {
+    "score": 11.2,
+    "max": 25,
+    "details": {
+      "cta": {
+        "score": 4,
+        "max": 3
+      },
+      "whatsapp": {
+        "score": 4,
+        "max": 3
+      },
+      "orcamento": {
+        "score": 2,
+        "max": 4
+      },
+      "formulario": {
+        "score": 0,
+        "max": 2
+      },
+      "catalogo": {
+        "score": 2,
+        "max": 3
+      },
+      "precos": {
+        "score": 0,
+        "max": 2
+      },
+      "ecommerce": {
+        "score": 0,
+        "max": 2
+      },
+      "captacao_lead": {
+        "score": 1,
+        "max": 2
+      },
+      "prova_social": {
+        "score": 4,
+        "max": 2
+      },
+      "oferta_diferenciais": {
+        "score": 4,
+        "max": 2
+      }
+    }
+  },
+  "tecnica": {
+    "score": 5.6,
+    "max": 10,
+    "details": {
+      "perf_mobile": {
+        "score": 2,
+        "max": 3
+      },
+      "perf_desktop": {
+        "score": 3,
+        "max": 1
+      },
+      "core_web_vitals": {
+        "score": 2,
+        "max": 2
+      },
+      "responsividade": {
+        "score": 4,
+        "max": 2
+      },
+      "acessibilidade": {
+        "score": 2,
+        "max": 1
+      },
+      "https": {
+        "score": 5,
+        "max": 1
+      }
+    }
+  },
+  "recursos": {
+    "score": 4.0,
+    "max": 10,
+    "details": {
+      "catalogo_pesquisavel": 0,
+      "filtros_categoria": 0,
+      "calculadora_orcamento": 0,
+      "chat_online": 0,
+      "blog_ativo": 0,
+      "video_institucional": 1,
+      "certificacoes_selos": 0,
+      "mapa_incorporado": 1,
+      "redes_sociais_ativas": 1,
+      "avaliacoes_visiveis": 1
+    }
+  },
+  "total": 52.2,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "Credibilidade forte: 57 anos de história, 3ª geração, 4.9/5 com 70 avaliações no Google",
+    "Diferencial técnico claro: tecnologia exclusiva 'Encaixe Deep Fitting'",
+    "Posicionamento de sustentabilidade: '100% Madeira de Reflorestamento'",
+    "Depoimentos autênticos de clientes reforçando prova social",
+    "Contato completo e transparente: 2 endereços, horários, CNPJ e múltiplos canais"
+  ],
+  "problemas": [
+    "SPA client-side renderizada sem SSR/pré-render, prejudicando indexação e SEO técnico",
+    "Nenhum preço visível em nenhum produto, dificultando comparação e decisão de compra",
+    "Ausência de formulário de contato/orçamento — canal único é WhatsApp",
+    "Sem páginas individuais de produto nem portfólio de projetos executados",
+    "Fotos de produtos limitadas, prejudicando avaliação visual do catálogo"
+  ],
+  "melhorias": [
+    "Implementar SSR ou pré-renderização (Next.js/SSG) para garantir indexação correta pelo Google",
+    "Adicionar formulário de orçamento estruturado (com upload de projeto/medidas) além do WhatsApp",
+    "Criar páginas de produto individuais com preços/faixas de preço, fotos ampliadas e ficha técnica"
+  ]
+}

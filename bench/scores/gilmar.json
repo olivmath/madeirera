@@ -1,0 +1,33 @@
+{
+  "id": "gilmar",
+  "name": "Madeireira Gilmar",
+  "city": "Florianópolis",
+  "url": "madeireiragilmar.com.br",
+  "ui": {"s": 11.25, "d": {"profissionalismo": 2, "hierarquia": 1, "tipografia": 3, "cores": 3, "imagens": 4, "consistencia": 4, "layout": 4, "mobile": 4}},
+  "ux": {"s": 12.44, "d": {"encontrabilidade": 3, "navegacao": 2, "catalogo": 2, "info_produto": 2, "contato": 5, "whatsapp": 4, "orcamento": 2, "mobile_ux": 3, "clareza": 3}},
+  "seo": {"s": 10.6, "d": {"seo_tecnico": 3, "titles_meta": 4, "headings": 1, "conteudo": 2, "pag_produto": 1, "seo_local": 3, "gbp": 1, "indexacao": 3, "autoridade": 1, "dados_estruturados": 5}},
+  "conv": {"s": 15.6, "d": {"cta": 4, "whatsapp": 4, "orcamento": 2, "formulario": 0, "catalogo": 2, "precos": 1, "ecommerce": 0, "lead": 2, "prova_social": 1, "diferenciais": 4}},
+  "tech": {"s": 7.5, "d": {"perf_mobile": 3, "perf_desktop": 4, "cwv": 3, "responsividade": 5, "acessibilidade": 2, "https": 5}},
+  "rec": {"s": 2, "d": {"catalogo_pesquisavel": 0, "filtros": 0, "orcamento_detalhado": 0, "ecommerce": 0, "pagamento_online": 0, "whatsapp_crm": 1, "area_cliente": 0, "conteudo_educacional": 0, "maps_social_reviews": 1, "personalizacao": 0}},
+  "total": 59.39,
+  "cls": "Fraco",
+  "pro": [
+    "Site profissional em Wix com identidade visual clara (logo 3D, paleta consistente)",
+    "Dados estruturados (2 blocos JSON-LD) e meta description bem escrita, com telefone no title",
+    "Imagens otimizadas em AVIF/WebP — boa performance de mídia",
+    "Diferencial de entrega rápida e gratuita destacado como CTA",
+    "Múltiplos canais de contato: WhatsApp, telefone, email, endereço completo"
+  ],
+  "con": [
+    "Nenhum H1 na página — hierarquia semântica quebrada (só H2), prejudica SEO on-page",
+    "Sem formulário de contato — depende só de WhatsApp/telefone",
+    "Catálogo restrito a 3 categorias (vigamentos, eucalipto roliço, tábuas/pranchas), sem página de produto individual",
+    "Sem preços de referência, sem prova social (depoimentos/certificações)",
+    "Meta description não é single-purpose (duplica o title)"
+  ],
+  "fix": [
+    "Corrigir hierarquia de heading: adicionar H1 único na página inicial",
+    "Adicionar formulário de orçamento estruturado além do WhatsApp",
+    "Expandir catálogo com páginas de produto e preços indicativos"
+  ]
+}

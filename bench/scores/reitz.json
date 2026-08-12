@@ -1,0 +1,178 @@
+{
+  "id": "reitz",
+  "name": "Reitz Esquadrias e Madeiras",
+  "city": "São José",
+  "url": "esquadriasreitz.com.br",
+  "dimensoes": {
+    "UI": {
+      "max": 15,
+      "subcriterios": {
+        "visual_design": {
+          "raw": 2,
+          "obs": "Tema WordPress 'Nevada' (UnitedThemes) genérico, gradientes CSS2-era em botões, sem identidade visual própria"
+        },
+        "tipografia": {
+          "raw": 3,
+          "obs": "Google Fonts (Roboto/Open Sans) carregadas via HTTP, hierarquia básica mas funcional"
+        },
+        "consistencia_visual": {
+          "raw": 2,
+          "obs": "12 tags H1 na página (portfólio item por item), estrutura de heading quebrada"
+        }
+      },
+      "raw_medio": 2.33,
+      "weighted": 7.0
+    },
+    "UX": {
+      "max": 20,
+      "subcriterios": {
+        "navegacao": {
+          "raw": 3,
+          "obs": "Menu simples, sem breadcrumbs, estrutura de portfólio datada"
+        },
+        "responsividade": {
+          "raw": 3,
+          "obs": "Viewport presente, mas sem srcset/imagens responsivas (0 ocorrências) — layout fixo em boxed 990px"
+        },
+        "carregamento": {
+          "raw": 2,
+          "obs": "Sem lazy loading (0), CSS inline extenso (5266 linhas no HTML), fontes/ícones via HTTP externo"
+        }
+      },
+      "raw_medio": 2.67,
+      "weighted": 10.7
+    },
+    "SEO": {
+      "max": 20,
+      "subcriterios": {
+        "meta_tags": {
+          "raw": 4,
+          "obs": "Title bom e específico, meta description presente e relevante, mas author aponta para agência (TAGX)"
+        },
+        "structured_data": {
+          "raw": 0,
+          "obs": "Nenhum JSON-LD (LocalBusiness/Product ausente), nenhuma Open Graph tag"
+        },
+        "https_indexacao": {
+          "raw": 0,
+          "obs": "SEM HTTPS — site inteiro em HTTP, penalização de ranking Google e alerta 'não seguro' no navegador. Canonical também aponta para HTTP"
+        },
+        "conteudo_semantico": {
+          "raw": 2,
+          "obs": "12x H1 na mesma página (deveria ser único), sem hierarquia H1>H2>H3 correta; alt text presente em imagens (bom ponto isolado)"
+        }
+      },
+      "raw_medio": 1.5,
+      "weighted": 6.0
+    },
+    "Conversao": {
+      "max": 25,
+      "subcriterios": {
+        "ctas": {
+          "raw": 3,
+          "obs": "12 CTAs no total (contato 6, ORÇAMENTO 4, Solicite 2) — presentes mas dispersos, sem CTA principal destacado"
+        },
+        "whatsapp": {
+          "raw": 4,
+          "obs": "5 links WhatsApp (wa.me + api.whatsapp.com) com número e mensagem pré-definida — bom para nicho B2C/B2B local"
+        },
+        "formularios": {
+          "raw": 0,
+          "obs": "Nenhum formulário de contato (0 <form>) — toda conversão depende de WhatsApp/telefone"
+        },
+        "prova_social": {
+          "raw": 1,
+          "obs": "Sem depoimentos visíveis na home, sem avaliações/reviews, sem selos de confiança"
+        },
+        "friccao_contato": {
+          "raw": 2,
+          "obs": "Sem formulário reduz fricção via WhatsApp mas elimina opção para quem prefere e-mail/orçamento assíncrono"
+        }
+      },
+      "raw_medio": 2.0,
+      "weighted": 10.0
+    },
+    "Tecnica": {
+      "max": 10,
+      "subcriterios": {
+        "seguranca": {
+          "raw": 0,
+          "obs": "HTTP puro, sem HTTPS/SSL — crítico em 2026, navegadores marcam como não seguro"
+        },
+        "performance_codigo": {
+          "raw": 2,
+          "obs": "CSS legado extenso inline, recursos (fontes, ícones) carregados via protocolo HTTP, sem minificação aparente"
+        }
+      },
+      "raw_medio": 1.0,
+      "weighted": 2.0
+    },
+    "Recursos": {
+      "max": 10,
+      "subcriterios": {
+        "midia_produtos": {
+          "raw": 3,
+          "obs": "20 imagens, foco em portfólio de esquadrias (portas/janelas), mas sem galeria moderna/lightbox aparente"
+        },
+        "redes_sociais_analytics": {
+          "raw": 0,
+          "obs": "Nenhuma rede social vinculada, nenhum analytics (GA/GTM/Pixel) detectado"
+        }
+      },
+      "raw_medio": 1.5,
+      "weighted": 3.0
+    }
+  },
+  "score_total": 38.7,
+  "classificacao": "Crítico",
+  "pontos_fortes": [
+    "Título e meta description específicos e bem direcionados ao nicho local (Barreiros, São José, SC)",
+    "5 links de WhatsApp com número e mensagem pré-preenchida, cobrindo múltiplos pontos da página",
+    "Alt text presente em todas as 20 imagens (acessibilidade básica cumprida)",
+    "Nicho muito especializado (esquadrias/portas/janelas de madeira) com portfólio de produtos dedicado",
+    "Viewport mobile configurado corretamente"
+  ],
+  "problemas": [
+    "CRÍTICO: site inteiro em HTTP, sem HTTPS/SSL — navegadores exibem aviso de 'não seguro', prejuízo direto de SEO e confiança",
+    "Zero formulários de contato — toda conversão depende exclusivamente de WhatsApp/telefone",
+    "Nenhum dado estruturado (JSON-LD) nem Open Graph — invisível para rich snippets e compartilhamento social",
+    "12 tags H1 na mesma página (uma por item de portfólio) — hierarquia semântica quebrada, prejudica SEO",
+    "Zero presença em redes sociais e nenhum analytics/pixel de conversão instalado — impossível medir tráfego ou remarketing"
+  ],
+  "melhorias": [
+    "Migrar para HTTPS imediatamente (Let's Encrypt gratuito) — prioridade máxima, afeta SEO e confiança",
+    "Adicionar formulário de orçamento com upload de medidas/fotos, complementando o WhatsApp",
+    "Corrigir hierarquia de headings (1 H1 por página) e adicionar JSON-LD de LocalBusiness/Product"
+  ],
+  "total": 38.7,
+  "ui": {
+    "score": 7.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 10.7,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 6.0,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 10.0,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 2.0,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 3.0,
+    "max": 10,
+    "details": {}
+  }
+}

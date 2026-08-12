@@ -1,0 +1,117 @@
+{
+  "id": "madecor",
+  "name": "Madeireira Madecor",
+  "city": "Palhoça",
+  "url": "madeireiramadecor.com.br",
+  "ui": {
+    "score": 8.0,
+    "max": 15,
+    "details": {
+      "profissionalismo": 2.5,
+      "hierarquia": 2,
+      "tipografia": 3,
+      "cores": 2.5,
+      "imagens": 2,
+      "consistencia": 2.5,
+      "layout": 3,
+      "mobile": 3.5
+    }
+  },
+  "ux": {
+    "score": 8.4,
+    "max": 20,
+    "details": {
+      "encontrabilidade": 1.5,
+      "navegacao": 3,
+      "catalogo": 1,
+      "info_produto": 0.5,
+      "contato": 4,
+      "whatsapp": 4,
+      "orcamento": 2,
+      "mobile_ux": 3,
+      "clareza": 3
+    }
+  },
+  "seo": {
+    "score": 4.8,
+    "max": 20,
+    "details": {
+      "seo_tecnico": 1.5,
+      "titles_meta": 1.5,
+      "headings": 0.5,
+      "conteudo": 1.5,
+      "paginas_produto": 0,
+      "seo_local": 2.5,
+      "gbp": 1,
+      "indexacao": 1,
+      "autoridade": 0.5,
+      "dados_estruturados": 0
+    }
+  },
+  "conversao": {
+    "score": 12.5,
+    "max": 25,
+    "details": {
+      "cta": 3.5,
+      "whatsapp": 4,
+      "orcamento": 2.5,
+      "formulario": 2.5,
+      "catalogo_produtos": 1,
+      "precos": 3,
+      "ecommerce": 3,
+      "captacao_lead": 3,
+      "prova_social": 0.5,
+      "oferta_diferenciais": 1.5
+    }
+  },
+  "tecnica": {
+    "score": 4.5,
+    "max": 10,
+    "details": {
+      "perf_mobile": 2,
+      "perf_desktop": 2.5,
+      "core_web_vitals": 1.5,
+      "responsividade": 3.5,
+      "acessibilidade": 1.5,
+      "https": 2.5
+    }
+  },
+  "recursos": {
+    "score": 3.0,
+    "max": 10,
+    "details": {
+      "catalogo_pesquisavel": 0,
+      "filtros": 0,
+      "orcamento_detalhado": 0,
+      "ecommerce": 0,
+      "pagamento_online": 0,
+      "whatsapp_crm": 1,
+      "area_cliente": 0,
+      "conteudo_educacional": 0,
+      "maps_social_reviews": 1,
+      "personalizacao": 1
+    }
+  },
+  "total": 41.2,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "WhatsApp com mensagem pré-preenchida, visível em duas seções do site (banner e contato)",
+    "Mapa do Google Maps incorporado facilita localização física",
+    "Telefones fixo e celular expostos em múltiplos pontos (topo, contato, rodapé)",
+    "Site responsivo (Bootstrap + viewport meta), utilizável em celular",
+    "Formulário de contato funcional com validação e captcha anti-spam"
+  ],
+  "problemas": [
+    "Nenhuma página ou seção de produtos com informações reais (medidas, espécies, tratamento, preços) — apenas uma galeria de fotos sem legendas",
+    "Meta description e og:description vazias; canonical aponta para HTTP em vez de HTTPS",
+    "Ausência de dados estruturados (schema.org) e de hierarquia de headings adequada (sem H2)",
+    "Galeria duplicada (mesmas 21 imagens repetidas em grid + modal/carrossel), todas com alt=\"\" vazio, prejudicando SEO e acessibilidade",
+    "E-mail de contato é Gmail genérico (madeirasmadecor@gmail.com), reduzindo percepção de profissionalismo",
+    "Nenhuma prova social (avaliações, depoimentos, certificações) e proposta de valor genérica (\"Kit casas pré-fabricadas e comércio de madeiras em geral\")"
+  ],
+  "melhorias": [
+    "Criar páginas de produto/categoria com fichas técnicas (espécie, dimensões, tratamento, aplicação) para SEO e para orientar decisão de compra",
+    "Corrigir meta tags (description, og:description), migrar canonical para HTTPS, adicionar schema.org (LocalBusiness) e sitemap.xml",
+    "Substituir e-mail Gmail por domínio próprio e adicionar depoimentos/avaliações de clientes para gerar prova social"
+  ]
+}

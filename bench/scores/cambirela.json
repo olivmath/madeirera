@@ -1,0 +1,290 @@
+{
+  "id": "cambirela",
+  "name": "Madeireira Cambirela",
+  "city": "Palhoça",
+  "url": "madeireiracambirela.com.br",
+  "ui": {
+    "score": 9.3,
+    "max": 15,
+    "details": {
+      "profissionalismo": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2
+      },
+      "hierarquia": {
+        "raw": 3.5,
+        "max": 2,
+        "weighted": 1.4
+      },
+      "tipografia": {
+        "raw": 2,
+        "max": 1,
+        "weighted": 0.4
+      },
+      "cores": {
+        "raw": 3,
+        "max": 1,
+        "weighted": 0.6
+      },
+      "imagens": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8
+      },
+      "consistencia": {
+        "raw": 3.5,
+        "max": 2,
+        "weighted": 1.4
+      },
+      "layout": {
+        "raw": 3.5,
+        "max": 2,
+        "weighted": 1.4
+      },
+      "mobile": {
+        "raw": 3.5,
+        "max": 3,
+        "weighted": 2.1
+      }
+    }
+  },
+  "ux": {
+    "score": 10.8,
+    "max": 20,
+    "details": {
+      "encontrabilidade": {
+        "raw": 2.5,
+        "max": 3,
+        "weighted": 1.5
+      },
+      "navegacao": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2
+      },
+      "catalogo": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2
+      },
+      "info_produto": {
+        "raw": 1.5,
+        "max": 3,
+        "weighted": 0.9
+      },
+      "contato": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "whatsapp": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "orcamento": {
+        "raw": 2.5,
+        "max": 3,
+        "weighted": 1.5
+      },
+      "mobile_ux": {
+        "raw": 3.5,
+        "max": 2,
+        "weighted": 1.4
+      },
+      "clareza": {
+        "raw": 3.5,
+        "max": 1,
+        "weighted": 0.7
+      }
+    }
+  },
+  "seo": {
+    "score": 8.4,
+    "max": 20,
+    "details": {
+      "seo_tecnico": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2
+      },
+      "titles_meta": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4
+      },
+      "headings": {
+        "raw": 2.5,
+        "max": 2,
+        "weighted": 1.0
+      },
+      "conteudo": {
+        "raw": 3,
+        "max": 3,
+        "weighted": 1.8
+      },
+      "paginas_produto": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4
+      },
+      "seo_local": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2
+      },
+      "gbp": {
+        "raw": 2.5,
+        "max": 2,
+        "weighted": 1.0,
+        "nota": "nao verificavel diretamente, valor default aplicado"
+      },
+      "indexacao": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8
+      },
+      "autoridade": {
+        "raw": 2.5,
+        "max": 1,
+        "weighted": 0.5,
+        "nota": "nao verificavel, valor default aplicado"
+      },
+      "dados_estruturados": {
+        "raw": 0.5,
+        "max": 1,
+        "weighted": 0.1
+      }
+    }
+  },
+  "conversao": {
+    "score": 10.7,
+    "max": 25,
+    "details": {
+      "cta": {
+        "raw": 3.5,
+        "max": 3,
+        "weighted": 2.1
+      },
+      "whatsapp": {
+        "raw": 4.5,
+        "max": 3,
+        "weighted": 2.7
+      },
+      "orcamento": {
+        "raw": 2.5,
+        "max": 4,
+        "weighted": 2.0
+      },
+      "formulario": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0
+      },
+      "catalogo": {
+        "raw": 1.5,
+        "max": 3,
+        "weighted": 0.9
+      },
+      "precos": {
+        "raw": 0.5,
+        "max": 2,
+        "weighted": 0.2
+      },
+      "ecommerce": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0
+      },
+      "captacao_lead": {
+        "raw": 0.5,
+        "max": 2,
+        "weighted": 0.2
+      },
+      "prova_social": {
+        "raw": 3.5,
+        "max": 2,
+        "weighted": 1.4
+      },
+      "oferta_diferenciais": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2
+      }
+    }
+  },
+  "tecnica": {
+    "score": 5.2,
+    "max": 10,
+    "details": {
+      "perf_mobile": {
+        "raw": 1.5,
+        "max": 3,
+        "weighted": 0.9
+      },
+      "perf_desktop": {
+        "raw": 2,
+        "max": 1,
+        "weighted": 0.4
+      },
+      "core_web_vitals": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8
+      },
+      "responsividade": {
+        "raw": 4,
+        "max": 2,
+        "weighted": 1.6
+      },
+      "acessibilidade": {
+        "raw": 2.5,
+        "max": 1,
+        "weighted": 0.5
+      },
+      "https": {
+        "raw": 5,
+        "max": 1,
+        "weighted": 1.0
+      }
+    }
+  },
+  "recursos": {
+    "score": 8.0,
+    "max": 10,
+    "details": {
+      "https": 1,
+      "whatsapp": 1,
+      "redes_sociais": 1,
+      "blog": 0,
+      "formulario_contato": 0,
+      "mapa_localizacao": 1,
+      "depoimentos": 1,
+      "catalogo_produtos": 1,
+      "multiplos_canais_contato": 1,
+      "popup_chat_whatsapp": 1
+    }
+  },
+  "total": 52.4,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "WhatsApp muito presente (30 referências no código, botão fixo/popup plugin dedicado) facilitando contato rápido",
+    "Presença em múltiplas redes sociais (Instagram, Facebook, YouTube, Twitter)",
+    "Seção de depoimentos de clientes funcionando como prova social",
+    "Catálogo textual amplo mencionado (25+ produtos: pinus, deck, forro, casas pré-fabricadas)",
+    "HTTPS ativo e layout responsivo com media queries extensivas para mobile"
+  ],
+  "problemas": [
+    "Nenhum formulário de contato ou orçamento no site — depende 100% do WhatsApp/e-mail manual",
+    "Zero dados estruturados (schema.org LocalBusiness/Product/Review) — nenhum JSON-LD encontrado",
+    "Meta description ausente e title tag genérico idêntico em todas as páginas ('MADEIREIRA CAMBIRELA') — SEO on-page fraco",
+    "3 números de WhatsApp diferentes espalhados pelo site, gerando confusão sobre qual contatar",
+    "Apenas 8 imagens no total para um catálogo de 25+ produtos — sem fotos individuais de produto, sem preços"
+  ],
+  "melhorias": [
+    "Criar páginas de produto individuais com fotos, especificações técnicas e faixa de preço para pinus, deck, forro etc.",
+    "Implementar formulário de orçamento estruturado (nome, produto, quantidade, telefone) complementando o WhatsApp",
+    "Adicionar dados estruturados (LocalBusiness, Product, Review) e meta descriptions únicas por página para melhorar SEO local e CTR"
+  ]
+}

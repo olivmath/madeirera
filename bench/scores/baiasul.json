@@ -1,0 +1,128 @@
+{
+  "id": "baiasul",
+  "name": "Madeireira Baía Sul",
+  "city": "São José",
+  "url": "baiasul.com.br",
+  "dimensoes": {
+    "UI": {
+      "peso": 15,
+      "subcriterios": {
+        "layout": 1,
+        "tipografia": 1,
+        "imagens": 1,
+        "consistencia_visual": 1
+      },
+      "raw": 1.0,
+      "weighted": 3.0
+    },
+    "UX": {
+      "peso": 20,
+      "subcriterios": {
+        "navegacao": 2,
+        "responsividade_mobile": 0,
+        "clareza_conteudo": 1,
+        "velocidade_percebida": 3,
+        "acessibilidade": 1
+      },
+      "raw": 1.4,
+      "weighted": 5.6
+    },
+    "SEO": {
+      "peso": 20,
+      "subcriterios": {
+        "title": 3,
+        "meta_description": 0,
+        "headings_h1_h2": 0,
+        "schema_markup": 0,
+        "keywords_conteudo": 0
+      },
+      "raw": 0.6,
+      "weighted": 2.4
+    },
+    "Conversao": {
+      "peso": 25,
+      "subcriterios": {
+        "ctas": 0,
+        "formularios": 0,
+        "whatsapp": 3,
+        "prova_social": 0,
+        "ofertas_urgencia": 0
+      },
+      "raw": 0.6,
+      "weighted": 3.0
+    },
+    "Tecnica": {
+      "peso": 10,
+      "subcriterios": {
+        "https": 5,
+        "viewport_mobile_friendly": 0,
+        "performance_tamanho": 4,
+        "codigo_semantico": 1
+      },
+      "raw": 2.5,
+      "weighted": 5.0
+    },
+    "Recursos": {
+      "peso": 10,
+      "subcriterios": {
+        "fotos_produtos": 0,
+        "catalogo_portfolio": 0,
+        "redes_sociais": 0,
+        "conteudo_institucional": 1
+      },
+      "raw": 0.25,
+      "weighted": 0.5
+    }
+  },
+  "total": 19.5,
+  "classificacao": "Crítico",
+  "pontos_fortes": [
+    "HTTPS ativo (segurança básica garantida)",
+    "Botão flutuante de WhatsApp com número direto",
+    "Site extremamente leve (15KB), carregamento rápido",
+    "Múltiplos canais de contato (3 telefones + 2 emails)",
+    "Estrutura de menu com páginas dedicadas (Empresa, Produtos, Fotos, Contato, Localização)"
+  ],
+  "problemas": [
+    "Sem meta viewport — completamente quebrado em dispositivos móveis",
+    "Zero CTAs, formulários ou captura de leads",
+    "Nenhuma tag H1/H2 ou dado estruturado (schema.org) — SEO praticamente inexistente",
+    "Apenas 1 imagem no site inteiro (GIF de cabeçalho), sem fotos de produtos/madeira",
+    "Design Web 1.0 datado (WebAcappella, gerado em 2014), layout table/div com posicionamento absoluto fixo em 1021px"
+  ],
+  "melhorias": [
+    "Implementar design responsivo com meta viewport e remover posicionamento absoluto fixo",
+    "Adicionar formulário de contato/orçamento, CTAs claros e fotos reais de produtos",
+    "Preencher meta description, criar H1/H2 semânticos e schema.org LocalBusiness"
+  ],
+  "ui": {
+    "score": 3.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 5.6,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 2.4,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 3.0,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 5.0,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 0.5,
+    "max": 10,
+    "details": {}
+  }
+}

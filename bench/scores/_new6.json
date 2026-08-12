@@ -1,0 +1,634 @@
+[
+  {
+    "id": "gmmadeiras",
+    "name": "GM Madeiras / Godofredo Madeiras",
+    "city": "Palhoça",
+    "url": "gmmadeiras.com.br",
+    "ui": {
+      "s": 0,
+      "d": {
+        "profissionalismo": 0,
+        "hierarquia": 0,
+        "tipografia": 0,
+        "cores": 0,
+        "imagens": 0,
+        "consistencia": 0,
+        "layout": 0,
+        "mobile": 0
+      }
+    },
+    "ux": {
+      "s": 0,
+      "d": {
+        "encontrabilidade": 0,
+        "navegacao": 0,
+        "catalogo": 0,
+        "info_produto": 0,
+        "contato": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "mobile_ux": 0,
+        "clareza": 0
+      }
+    },
+    "seo": {
+      "s": 0,
+      "d": {
+        "seo_tecnico": 0,
+        "titles_meta": 0,
+        "headings": 0,
+        "conteudo": 0,
+        "pag_produto": 0,
+        "seo_local": 0,
+        "gbp": 0,
+        "indexacao": 0,
+        "autoridade": 0,
+        "dados_estruturados": 0
+      }
+    },
+    "conv": {
+      "s": 0,
+      "d": {
+        "cta": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "formulario": 0,
+        "catalogo": 0,
+        "precos": 0,
+        "ecommerce": 0,
+        "lead": 0,
+        "prova_social": 0,
+        "diferenciais": 0
+      }
+    },
+    "tech": {
+      "s": 0,
+      "d": {
+        "perf_mobile": 0,
+        "perf_desktop": 0,
+        "cwv": 0,
+        "responsividade": 0,
+        "acessibilidade": 0,
+        "https": 0
+      }
+    },
+    "rec": {
+      "s": 0,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 0,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 0,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 0,
+        "personalizacao": 0
+      }
+    },
+    "total": 0,
+    "cls": "Não avaliável — site offline",
+    "pro": [],
+    "con": [
+      "Domínio não resolve (DNS: ENOTFOUND www.gmmadeiras.com.br)",
+      "Site inacessível via WebFetch e via curl direto — provável domínio expirado ou fora do ar"
+    ],
+    "fix": [
+      "Verificar registro/renovação do domínio",
+      "Restaurar hospedagem e apontamento DNS",
+      "Considerar migrar para domínio/hospedagem confiável"
+    ]
+  },
+  {
+    "id": "flordosol",
+    "name": "Madeireira Flor do Sol",
+    "city": "Palhoça",
+    "url": "madeireiraflordosol.com.br",
+    "ui": {
+      "s": 0,
+      "d": {
+        "profissionalismo": 0,
+        "hierarquia": 0,
+        "tipografia": 0,
+        "cores": 0,
+        "imagens": 0,
+        "consistencia": 0,
+        "layout": 0,
+        "mobile": 0
+      }
+    },
+    "ux": {
+      "s": 0,
+      "d": {
+        "encontrabilidade": 0,
+        "navegacao": 0,
+        "catalogo": 0,
+        "info_produto": 0,
+        "contato": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "mobile_ux": 0,
+        "clareza": 0
+      }
+    },
+    "seo": {
+      "s": 0,
+      "d": {
+        "seo_tecnico": 0,
+        "titles_meta": 0,
+        "headings": 0,
+        "conteudo": 0,
+        "pag_produto": 0,
+        "seo_local": 0,
+        "gbp": 0,
+        "indexacao": 0,
+        "autoridade": 0,
+        "dados_estruturados": 0
+      }
+    },
+    "conv": {
+      "s": 0,
+      "d": {
+        "cta": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "formulario": 0,
+        "catalogo": 0,
+        "precos": 0,
+        "ecommerce": 0,
+        "lead": 0,
+        "prova_social": 0,
+        "diferenciais": 0
+      }
+    },
+    "tech": {
+      "s": 0,
+      "d": {
+        "perf_mobile": 0,
+        "perf_desktop": 0,
+        "cwv": 0,
+        "responsividade": 0,
+        "acessibilidade": 0,
+        "https": 0
+      }
+    },
+    "rec": {
+      "s": 0,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 0,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 0,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 0,
+        "personalizacao": 0
+      }
+    },
+    "total": 0,
+    "cls": "Não avaliável — site offline",
+    "pro": [],
+    "con": [
+      "Domínio não resolve (DNS: ENOTFOUND www.madeireiraflordosol.com.br)",
+      "Site inacessível via WebFetch e via curl direto — provável domínio expirado ou fora do ar"
+    ],
+    "fix": [
+      "Verificar registro/renovação do domínio",
+      "Restaurar hospedagem e apontamento DNS",
+      "Considerar migrar para domínio/hospedagem confiável"
+    ]
+  },
+  {
+    "id": "canaa",
+    "name": "Canaã Madeiras",
+    "city": "Biguaçu",
+    "url": "canaamadeirassc.com",
+    "ui": {
+      "s": 0,
+      "d": {
+        "profissionalismo": 0,
+        "hierarquia": 0,
+        "tipografia": 0,
+        "cores": 0,
+        "imagens": 0,
+        "consistencia": 0,
+        "layout": 0,
+        "mobile": 0
+      }
+    },
+    "ux": {
+      "s": 0,
+      "d": {
+        "encontrabilidade": 0,
+        "navegacao": 0,
+        "catalogo": 0,
+        "info_produto": 0,
+        "contato": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "mobile_ux": 0,
+        "clareza": 0
+      }
+    },
+    "seo": {
+      "s": 0,
+      "d": {
+        "seo_tecnico": 0,
+        "titles_meta": 0,
+        "headings": 0,
+        "conteudo": 0,
+        "pag_produto": 0,
+        "seo_local": 0,
+        "gbp": 0,
+        "indexacao": 0,
+        "autoridade": 0,
+        "dados_estruturados": 0
+      }
+    },
+    "conv": {
+      "s": 0,
+      "d": {
+        "cta": 0,
+        "whatsapp": 0,
+        "orcamento": 0,
+        "formulario": 0,
+        "catalogo": 0,
+        "precos": 0,
+        "ecommerce": 0,
+        "lead": 0,
+        "prova_social": 0,
+        "diferenciais": 0
+      }
+    },
+    "tech": {
+      "s": 0,
+      "d": {
+        "perf_mobile": 0,
+        "perf_desktop": 0,
+        "cwv": 0,
+        "responsividade": 0,
+        "acessibilidade": 0,
+        "https": 0
+      }
+    },
+    "rec": {
+      "s": 0,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 0,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 0,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 0,
+        "personalizacao": 0
+      }
+    },
+    "total": 0,
+    "cls": "Não avaliável — site offline",
+    "pro": [],
+    "con": [
+      "Domínio não resolve (DNS: ENOTFOUND www.canaamadeirassc.com)",
+      "Site inacessível via WebFetch e via curl direto — provável domínio expirado ou fora do ar"
+    ],
+    "fix": [
+      "Verificar registro/renovação do domínio",
+      "Restaurar hospedagem e apontamento DNS",
+      "Considerar migrar para domínio/hospedagem confiável"
+    ]
+  },
+  {
+    "id": "zcf",
+    "name": "ZCF Madeireira",
+    "city": "Biguaçu",
+    "url": "madeiratratada.floripa.br",
+    "ui": {
+      "s": 6.75,
+      "d": {
+        "profissionalismo": 1,
+        "hierarquia": 1,
+        "tipografia": 2,
+        "cores": 2,
+        "imagens": 1,
+        "consistencia": 2,
+        "layout": 2,
+        "mobile": 2
+      }
+    },
+    "ux": {
+      "s": 8.44,
+      "d": {
+        "encontrabilidade": 2,
+        "navegacao": 2,
+        "catalogo": 1,
+        "info_produto": 1,
+        "contato": 4,
+        "whatsapp": 4,
+        "orcamento": 2,
+        "mobile_ux": 3,
+        "clareza": 2
+      }
+    },
+    "seo": {
+      "s": 5.6,
+      "d": {
+        "seo_tecnico": 1,
+        "titles_meta": 2,
+        "headings": 1,
+        "conteudo": 2,
+        "pag_produto": 0,
+        "seo_local": 3,
+        "gbp": 1,
+        "indexacao": 2,
+        "autoridade": 1,
+        "dados_estruturados": 0
+      }
+    },
+    "conv": {
+      "s": 12.85,
+      "d": {
+        "cta": 4,
+        "whatsapp": 5,
+        "orcamento": 2,
+        "formulario": 0,
+        "catalogo": 1,
+        "precos": 1,
+        "ecommerce": 0,
+        "lead": 2,
+        "prova_social": 1,
+        "diferenciais": 1
+      }
+    },
+    "tech": {
+      "s": 5.83,
+      "d": {
+        "perf_mobile": 3,
+        "perf_desktop": 4,
+        "cwv": 3,
+        "responsividade": 3,
+        "acessibilidade": 2,
+        "https": 5
+      }
+    },
+    "rec": {
+      "s": 1,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 0,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 1,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 0,
+        "personalizacao": 0
+      }
+    },
+    "total": 40.47,
+    "cls": "Fraco",
+    "pro": [
+      "Botões de WhatsApp diretos em cada card de empresa, com mensagem pré-preenchida",
+      "Cobertura geográfica extensa (34+ bairros/cidades) favorece SEO local de cauda longa",
+      "HTTPS ativo e site responde rápido (site leve, ~100KB)",
+      "Links de telefone e WhatsApp funcionais em todos os cards"
+    ],
+    "con": [
+      "Não é o site de uma madeireira própria — é um diretório/agregador de terceiros que lista 'empresas parceiras', sem loja/marca própria consolidada",
+      "Sem H2, sem dados estruturados (schema.org), meta description ausente — SEO técnico fraco",
+      "Nenhum formulário de contato — único canal é WhatsApp/telefone",
+      "Sem catálogo de produtos, preços ou páginas de produto",
+      "Design minimalista datado, sem prova social (depoimentos/avaliações)"
+    ],
+    "fix": [
+      "Adicionar meta description, H2 semânticos e dados estruturados (LocalBusiness) por empresa listada",
+      "Criar páginas de produto/categoria com descrições e preços de referência",
+      "Incluir formulário de orçamento como canal alternativo ao WhatsApp"
+    ]
+  },
+  {
+    "id": "gilmar",
+    "name": "Madeireira Gilmar",
+    "city": "Florianópolis",
+    "url": "madeireiragilmar.com.br",
+    "ui": {
+      "s": 11.25,
+      "d": {
+        "profissionalismo": 2,
+        "hierarquia": 1,
+        "tipografia": 3,
+        "cores": 3,
+        "imagens": 4,
+        "consistencia": 4,
+        "layout": 4,
+        "mobile": 4
+      }
+    },
+    "ux": {
+      "s": 12.44,
+      "d": {
+        "encontrabilidade": 3,
+        "navegacao": 2,
+        "catalogo": 2,
+        "info_produto": 2,
+        "contato": 5,
+        "whatsapp": 4,
+        "orcamento": 2,
+        "mobile_ux": 3,
+        "clareza": 3
+      }
+    },
+    "seo": {
+      "s": 10.6,
+      "d": {
+        "seo_tecnico": 3,
+        "titles_meta": 4,
+        "headings": 1,
+        "conteudo": 2,
+        "pag_produto": 1,
+        "seo_local": 3,
+        "gbp": 1,
+        "indexacao": 3,
+        "autoridade": 1,
+        "dados_estruturados": 5
+      }
+    },
+    "conv": {
+      "s": 15.6,
+      "d": {
+        "cta": 4,
+        "whatsapp": 4,
+        "orcamento": 2,
+        "formulario": 0,
+        "catalogo": 2,
+        "precos": 1,
+        "ecommerce": 0,
+        "lead": 2,
+        "prova_social": 1,
+        "diferenciais": 4
+      }
+    },
+    "tech": {
+      "s": 7.5,
+      "d": {
+        "perf_mobile": 3,
+        "perf_desktop": 4,
+        "cwv": 3,
+        "responsividade": 5,
+        "acessibilidade": 2,
+        "https": 5
+      }
+    },
+    "rec": {
+      "s": 2,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 0,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 1,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 1,
+        "personalizacao": 0
+      }
+    },
+    "total": 59.39,
+    "cls": "Fraco",
+    "pro": [
+      "Site profissional em Wix com identidade visual clara (logo 3D, paleta consistente)",
+      "Dados estruturados (2 blocos JSON-LD) e meta description bem escrita, com telefone no title",
+      "Imagens otimizadas em AVIF/WebP — boa performance de mídia",
+      "Diferencial de entrega rápida e gratuita destacado como CTA",
+      "Múltiplos canais de contato: WhatsApp, telefone, email, endereço completo"
+    ],
+    "con": [
+      "Nenhum H1 na página — hierarquia semântica quebrada (só H2), prejudica SEO on-page",
+      "Sem formulário de contato — depende só de WhatsApp/telefone",
+      "Catálogo restrito a 3 categorias (vigamentos, eucalipto roliço, tábuas/pranchas), sem página de produto individual",
+      "Sem preços de referência, sem prova social (depoimentos/certificações)",
+      "Meta description não é single-purpose (duplica o title)"
+    ],
+    "fix": [
+      "Corrigir hierarquia de heading: adicionar H1 único na página inicial",
+      "Adicionar formulário de orçamento estruturado além do WhatsApp",
+      "Expandir catálogo com páginas de produto e preços indicativos"
+    ]
+  },
+  {
+    "id": "lokal",
+    "name": "Lokal Madeiras e Esquadrias",
+    "city": "Florianópolis",
+    "url": "madeireiralokal.com.br",
+    "ui": {
+      "s": 10.5,
+      "d": {
+        "profissionalismo": 2,
+        "hierarquia": 1,
+        "tipografia": 2,
+        "cores": 3,
+        "imagens": 4,
+        "consistencia": 3,
+        "layout": 3,
+        "mobile": 3
+      }
+    },
+    "ux": {
+      "s": 13.78,
+      "d": {
+        "encontrabilidade": 3,
+        "navegacao": 3,
+        "catalogo": 3,
+        "info_produto": 2,
+        "contato": 5,
+        "whatsapp": 5,
+        "orcamento": 3,
+        "mobile_ux": 3,
+        "clareza": 2
+      }
+    },
+    "seo": {
+      "s": 7.6,
+      "d": {
+        "seo_tecnico": 1,
+        "titles_meta": 3,
+        "headings": 0,
+        "conteudo": 2,
+        "pag_produto": 1,
+        "seo_local": 3,
+        "gbp": 1,
+        "indexacao": 2,
+        "autoridade": 1,
+        "dados_estruturados": 0
+      }
+    },
+    "conv": {
+      "s": 16.4,
+      "d": {
+        "cta": 4,
+        "whatsapp": 5,
+        "orcamento": 3,
+        "formulario": 3,
+        "catalogo": 3,
+        "precos": 0,
+        "ecommerce": 0,
+        "lead": 3,
+        "prova_social": 2,
+        "diferenciais": 3
+      }
+    },
+    "tech": {
+      "s": 6.67,
+      "d": {
+        "perf_mobile": 2,
+        "perf_desktop": 4,
+        "cwv": 2,
+        "responsividade": 4,
+        "acessibilidade": 2,
+        "https": 5
+      }
+    },
+    "rec": {
+      "s": 2,
+      "d": {
+        "catalogo_pesquisavel": 0,
+        "filtros": 0,
+        "orcamento_detalhado": 1,
+        "ecommerce": 0,
+        "pagamento_online": 0,
+        "whatsapp_crm": 1,
+        "area_cliente": 0,
+        "conteudo_educacional": 0,
+        "maps_social_reviews": 0,
+        "personalizacao": 0
+      }
+    },
+    "total": 56.95,
+    "cls": "Fraco",
+    "pro": [
+      "Catálogo amplo e diversificado: portas, janelas, assoalhos, decks, telhados, esquadrias",
+      "Dois números de WhatsApp ativos e seção dedicada de 'Orçamento Online' com formulário",
+      "Mais de 20 anos de mercado, horário, endereço e CNPJ visíveis — boa confiança institucional",
+      "Presença multi-canal: Facebook, Instagram, YouTube, Google Maps embutido",
+      "Slideshow com 19 imagens de produtos instalados, reforçando expertise"
+    ],
+    "con": [
+      "Sem H1/H2 semânticos no HTML e sem dados estruturados — SEO técnico bem fraco para o volume de conteúdo",
+      "Sem meta viewport padrão (formato não usual: 'initial-scale=1.0,maximum-scale=1.0'), sem meta title/description otimizados além do básico",
+      "Popup publicitário prejudica primeira impressão e pode penalizar Core Web Vitals (CLS)",
+      "'Blog Lokal' mencionado mas sem conteúdo visível — link morto/promessa não cumprida",
+      "Sem preços de referência nem especificações técnicas detalhadas dos produtos"
+    ],
+    "fix": [
+      "Implementar hierarquia de headings correta (H1 único + H2 por seção) e JSON-LD LocalBusiness",
+      "Remover ou tornar opcional o popup para não prejudicar CWV/experiência mobile",
+      "Publicar conteúdo real no blog ou remover o link até existir conteúdo"
+    ]
+  }
+]

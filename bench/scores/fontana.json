@@ -1,0 +1,124 @@
+{
+  "id": "fontana",
+  "name": "Madeireira Fontana",
+  "city": "São José",
+  "url": "fontanamadeireira.com.br",
+  "score_total": 48,
+  "classificacao": "Fraco",
+  "dimensoes": {
+    "ui": {
+      "max": 15,
+      "raw_medio": 3.33,
+      "weighted": 10.0,
+      "subcriterios": {
+        "visual_design_modernidade": 3,
+        "consistencia_cores_tipografia": 3,
+        "responsividade_mobile": 4
+      }
+    },
+    "ux": {
+      "max": 20,
+      "raw_medio": 3.0,
+      "weighted": 12.0,
+      "subcriterios": {
+        "navegacao_clareza_menu": 4,
+        "facilidade_encontrar_contato": 2,
+        "hierarquia_conteudo_ctas": 3,
+        "menu_mobile_usabilidade": 3
+      }
+    },
+    "seo": {
+      "max": 20,
+      "raw_medio": 2.0,
+      "weighted": 8.0,
+      "subcriterios": {
+        "title_meta_description": 1,
+        "heading_structure_lang": 2,
+        "schema_markup": 2,
+        "tecnico_canonical_xmlrpc_versao": 3
+      }
+    },
+    "conversao": {
+      "max": 25,
+      "raw_medio": 2.2,
+      "weighted": 11.0,
+      "subcriterios": {
+        "ctas_quantidade_clareza": 3,
+        "whatsapp_canal_rapido": 0,
+        "formulario_contato": 4,
+        "prova_social_trust": 3,
+        "ofertas_promocoes_urgencia": 1
+      }
+    },
+    "tecnica": {
+      "max": 10,
+      "raw_medio": 1.67,
+      "weighted": 3.3,
+      "subcriterios": {
+        "performance_scripts": 2,
+        "seguranca_https_versao_exposta": 1,
+        "acessibilidade_basica": 2
+      }
+    },
+    "recursos": {
+      "max": 10,
+      "raw_medio": 2.0,
+      "weighted": 4.0,
+      "subcriterios": {
+        "galeria_portfolio": 4,
+        "blog_conteudo": 2,
+        "redes_sociais": 0
+      }
+    }
+  },
+  "pontos_fortes": [
+    "Mais de 30 anos de história e tradição em SC (fundada em 1985), reforça confiança institucional",
+    "Formulário de contato completo e funcional (nome, email, telefone, assunto, mensagem) via Contact Form 7",
+    "Depoimentos de clientes com marcação estruturada Schema.org/Review (prova social semi-estruturada)",
+    "Múltiplas opções de pagamento listadas explicitamente (Mastercard, Visa, Hipercard, Diners, Construcard Caixa, cheque, boleto)",
+    "Menu de navegação simples e direto (Home, A Fontana, Produtos, Galeria, Contato) com página dedicada de Galeria"
+  ],
+  "problemas": [
+    "Nenhum link de WhatsApp em todo o site — ausência do canal de conversão mais usado no setor madeireiro B2B/B2C no Brasil",
+    "Sem meta description — perda total de controle sobre o snippet exibido nos resultados de busca",
+    "CMS extremamente desatualizado: WordPress 4.3.34 (2015) com XML-RPC habilitado e versão exposta no HTML — risco de segurança alto",
+    "Sem H1 na home e atributo lang=\"en-US\" incorreto para conteúdo 100% em pt-BR — prejudica SEO e acessibilidade",
+    "Nenhuma rede social vinculada (bloco \"social\" vazio no rodapé) e ausência de Schema.org LocalBusiness/Organization"
+  ],
+  "melhorias": [
+    "Adicionar botão fixo de WhatsApp (click-to-chat) visível em todas as páginas e no formulário de contato",
+    "Atualizar o CMS/tema (ou migrar de plataforma), desabilitar XML-RPC, e adicionar meta description + H1 com palavras-chave locais (ex: 'madeireira em São José SC')",
+    "Implementar Schema.org LocalBusiness/Organization com endereço, telefone, horário de funcionamento e links de redes sociais"
+  ],
+  "total": 48.3,
+  "ui": {
+    "score": 10.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 12.0,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 8.0,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 11.0,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 3.3,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 4.0,
+    "max": 10,
+    "details": {}
+  }
+}

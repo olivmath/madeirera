@@ -1,0 +1,149 @@
+{
+  "id": "ceratto",
+  "name": "Ceratto Madeiras",
+  "city": "Biguaçu",
+  "url": "cerattomadeiras.com.br",
+  "stack": "WordPress/Elementor (tema Astra)",
+  "scores": {
+    "ui": {
+      "max": 15,
+      "raw": {
+        "profissionalismo": 3,
+        "hierarquia": 2,
+        "tipografia": 3,
+        "cores": 3,
+        "imagens": 3,
+        "consistencia": 3,
+        "layout": 2,
+        "mobile": 3
+      },
+      "weighted": 8.2
+    },
+    "ux": {
+      "max": 20,
+      "raw": {
+        "encontrabilidade": 3,
+        "navegacao": 3,
+        "catalogo": 3,
+        "info_produto": 2,
+        "contato": 4,
+        "whatsapp": 5,
+        "orcamento": 2,
+        "mobile_ux": 3,
+        "clareza": 4
+      },
+      "weighted": 12.0
+    },
+    "seo": {
+      "max": 20,
+      "raw": {
+        "seo_tecnico": 2,
+        "titles_meta": 1,
+        "headings": 2,
+        "conteudo": 2,
+        "pagina_produto": 2,
+        "seo_local": 3,
+        "gbp": 2,
+        "indexacao": 3,
+        "autoridade": 1,
+        "dados_estruturados": 0
+      },
+      "weighted": 7.8
+    },
+    "conversao": {
+      "max": 25,
+      "raw": {
+        "cta": 4,
+        "whatsapp": 5,
+        "orcamento": 2,
+        "formulario": 0,
+        "catalogo": 3,
+        "precos": 3,
+        "ecommerce": 0,
+        "lead": 1,
+        "prova_social": 0,
+        "diferenciais": 3
+      },
+      "weighted": 11.6
+    },
+    "tecnica": {
+      "max": 10,
+      "raw": {
+        "perf_mobile": 2,
+        "perf_desktop": 3,
+        "cwv": 2,
+        "responsividade": 4,
+        "acessibilidade": 1,
+        "https": 5
+      },
+      "weighted": 5.4
+    },
+    "recursos": {
+      "max": 10,
+      "items": {
+        "whatsapp_button": 1,
+        "blog_ativo": 0,
+        "redes_sociais": 0,
+        "formulario_contato": 0,
+        "mapa_incorporado": 1,
+        "catalogo_com_preco": 1,
+        "galeria_fotos": 1,
+        "multiplos_canais_contato": 1,
+        "certificacoes_selos": 0,
+        "newsletter_captura_lead": 0
+      },
+      "weighted": 5.0
+    }
+  },
+  "total": 50.0,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "Forte integração com WhatsApp (botão flutuante + múltiplos CTAs 'Enviar WhatsApp')",
+    "Catálogo de móveis rústicos com preços exibidos (Kit Tábuas R$450, Tábua Churrasco R$200, Petisqueiras R$150)",
+    "Múltiplos canais de contato: telefone, e-mail, WhatsApp e mapa do Google incorporado",
+    "Posicionamento local claro e repetido ('Biguaçu e Região') reforçando SEO local",
+    "HTTPS ativo e tema responsivo (Astra) com breakpoints mobile definidos"
+  ],
+  "problemas": [
+    "Title extremamente longo e sobrecarregado de keywords ('Ceratto Madeiras – Sua madeireira em Biguaçu e Região – A Ceratto...') — péssimo para SEO/SERP",
+    "Ausência total de meta description em ambas as páginas analisadas",
+    "Duas tags H1 na mesma página (home) e hierarquia de headings inconsistente (H2 usado para preços de produto)",
+    "Zero dados estruturados: nenhum schema.org (LocalBusiness, Product, BreadcrumbList) presente",
+    "Sem formulário de contato/orçamento (0 <form> nas duas páginas) e quase todas as imagens sem atributo alt (14 de 16 vazias na home) — prejudica acessibilidade e SEO de imagem"
+  ],
+  "melhorias": [
+    "Reescrever <title> (≤60 caracteres, 1 por página) e adicionar meta description única e persuasiva em cada URL",
+    "Implementar JSON-LD LocalBusiness + Product, corrigir para 1 H1 por página e reorganizar H2/H3 semanticamente (preços não deveriam ser H2)",
+    "Adicionar formulário de orçamento estruturado (nome, tipo de madeira/produto, medidas, telefone) como alternativa ao WhatsApp, e preencher alt text descritivo em todas as imagens do catálogo"
+  ],
+  "ui": {
+    "score": 8.2,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 12.0,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 7.8,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 11.6,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 5.4,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 5.0,
+    "max": 10,
+    "details": {}
+  }
+}

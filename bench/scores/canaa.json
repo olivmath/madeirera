@@ -1,0 +1,17 @@
+{
+  "id": "canaa",
+  "name": "Canaã Madeiras",
+  "city": "Biguaçu",
+  "url": "canaamadeirassc.com",
+  "ui": {"s": 0, "d": {"profissionalismo": 0, "hierarquia": 0, "tipografia": 0, "cores": 0, "imagens": 0, "consistencia": 0, "layout": 0, "mobile": 0}},
+  "ux": {"s": 0, "d": {"encontrabilidade": 0, "navegacao": 0, "catalogo": 0, "info_produto": 0, "contato": 0, "whatsapp": 0, "orcamento": 0, "mobile_ux": 0, "clareza": 0}},
+  "seo": {"s": 0, "d": {"seo_tecnico": 0, "titles_meta": 0, "headings": 0, "conteudo": 0, "pag_produto": 0, "seo_local": 0, "gbp": 0, "indexacao": 0, "autoridade": 0, "dados_estruturados": 0}},
+  "conv": {"s": 0, "d": {"cta": 0, "whatsapp": 0, "orcamento": 0, "formulario": 0, "catalogo": 0, "precos": 0, "ecommerce": 0, "lead": 0, "prova_social": 0, "diferenciais": 0}},
+  "tech": {"s": 0, "d": {"perf_mobile": 0, "perf_desktop": 0, "cwv": 0, "responsividade": 0, "acessibilidade": 0, "https": 0}},
+  "rec": {"s": 0, "d": {"catalogo_pesquisavel": 0, "filtros": 0, "orcamento_detalhado": 0, "ecommerce": 0, "pagamento_online": 0, "whatsapp_crm": 0, "area_cliente": 0, "conteudo_educacional": 0, "maps_social_reviews": 0, "personalizacao": 0}},
+  "total": 0,
+  "cls": "Não avaliável — site offline",
+  "pro": [],
+  "con": ["Domínio não resolve (DNS: ENOTFOUND www.canaamadeirassc.com)", "Site inacessível via WebFetch e via curl direto — provável domínio expirado ou fora do ar"],
+  "fix": ["Verificar registro/renovação do domínio", "Restaurar hospedagem e apontamento DNS", "Considerar migrar para domínio/hospedagem confiável"]
+}

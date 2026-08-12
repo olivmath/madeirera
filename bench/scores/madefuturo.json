@@ -1,0 +1,96 @@
+{
+  "id": "madefuturo",
+  "name": "Madeireira Madefuturo",
+  "city": "Palhoça",
+  "url": "madefuturo.com.br",
+  "score_total": 56,
+  "classificacao": "Fraco",
+  "dimensoes": {
+    "ui": {
+      "raw": 4,
+      "max": 15,
+      "weighted": 12,
+      "obs": "Design autoral (paleta marrom/bege, tipografia Lato+Unna, cards com hover/zoom), decoração SVG no hero. Falta variedade de fotos reais (produtos genéricos ilustrados)."
+    },
+    "ux": {
+      "raw": 3,
+      "max": 20,
+      "weighted": 12,
+      "obs": "Navegação com âncoras (Mão de obra, Madeiras), menu mobile funcional, sub-páginas (Empresa, Contato). Sem filtros/busca, sem páginas de produto individuais, sem preços."
+    },
+    "seo": {
+      "raw": 2,
+      "max": 20,
+      "weighted": 8,
+      "obs": "Title/meta description/canonical/OG/Twitter presentes, mas SEM H1 (hero usa <div>), SEM schema.org/JSON-LD, imagens com alt vazio, conteúdo textual raso."
+    },
+    "conversao": {
+      "raw": 2,
+      "max": 25,
+      "weighted": 10,
+      "obs": "WhatsApp em 3 pontos (header, hero, footer) + loja virtual externa (Vendizap). Zero formulário de orçamento, sem tel: clicável, sem prova social, sem preços online."
+    },
+    "tecnica": {
+      "raw": 4,
+      "max": 10,
+      "weighted": 8,
+      "obs": "Next.js com export estático, lazy-loading via next/image, font preload + font-display:swap, responsivo (breakpoints 600/768/992/1200px), HTTPS ativo."
+    },
+    "recursos": {
+      "raw": 3,
+      "max": 10,
+      "weighted": 6,
+      "obs": "Facebook + Instagram + loja virtual (Vendizap), sub-páginas Empresa/Contato. Sem blog, sem certificações/selos, sem diferenciais (frete, parcelamento)."
+    }
+  },
+  "pontos_fortes": [
+    "Design visual autoral com identidade de marca consistente (paleta, tipografia Lato+Unna, cards com hover/zoom)",
+    "Stack técnica moderna: Next.js com export estático, lazy loading de imagens, font-display:swap",
+    "HTTPS ativo e meta tags completas (OG, Twitter Card, canonical) para compartilhamento social",
+    "Múltiplos pontos de contato via WhatsApp (header, hero, footer) mais loja virtual externa (Vendizap)",
+    "Catálogo de produtos com descrições técnicas detalhadas (dimensões, tipos de madeira, aplicações)"
+  ],
+  "problemas": [
+    "Nenhuma tag H1 na página — hierarquia de títulos quebrada (hero title é <div>), prejudica SEO on-page",
+    "Ausência total de dados estruturados (JSON-LD/schema.org LocalBusiness, Product, BreadcrumbList)",
+    "Zero formulários de contato ou orçamento — conversão depende 100% de redirecionamento ao WhatsApp",
+    "Imagens de produto com atributo alt vazio — perda de acessibilidade e de SEO de imagem",
+    "Nenhuma prova social (depoimentos, avaliações, fotos de obras concluídas, selos de confiança)"
+  ],
+  "melhorias": [
+    "Promover o hero title para H1 real e implementar JSON-LD LocalBusiness com endereço, telefone e horário de funcionamento",
+    "Criar formulário de orçamento (nome, produto, quantidade, cidade) como alternativa ao WhatsApp para captar leads assíncronos",
+    "Preencher atributos alt descritivos em todas as imagens de produto e adicionar seção de depoimentos/casos de obra"
+  ],
+  "total": 56.0,
+  "ui": {
+    "score": 12.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 12.0,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 8.0,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 10.0,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 8.0,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 6.0,
+    "max": 10,
+    "details": {}
+  }
+}

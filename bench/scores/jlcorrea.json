@@ -1,0 +1,116 @@
+{
+  "id": "jlcorrea",
+  "name": "JL Corrêa Madeiras",
+  "city": "Palhoça",
+  "url": "jlcorreamadeiras.com.br",
+  "ui": {
+    "score": 11.2,
+    "max": 15,
+    "details": {
+      "profissionalismo": 1.6,
+      "hierarquia": 1.6,
+      "tipografia": 0.8,
+      "cores": 0.6,
+      "imagens": 1.6,
+      "consistencia": 1.6,
+      "layout": 1.6,
+      "mobile": 1.8
+    }
+  },
+  "ux": {
+    "score": 9.6,
+    "max": 20,
+    "details": {
+      "encontrabilidade": 1.2,
+      "navegacao": 1.2,
+      "catalogo": 0.6,
+      "info_produto": 0.6,
+      "contato": 0.8,
+      "whatsapp": 2.0,
+      "orcamento": 1.2,
+      "mobile_ux": 1.2,
+      "clareza": 0.8
+    }
+  },
+  "seo": {
+    "score": 9.3,
+    "max": 20,
+    "details": {
+      "seo_tecnico": 1.2,
+      "titles_meta": 0.8,
+      "headings": 1.6,
+      "conteudo": 1.8,
+      "paginas_produto": 0.0,
+      "seo_local": 1.8,
+      "gbp": 1.0,
+      "indexacao": 0.6,
+      "autoridade": 0.5,
+      "dados_estruturados": 0.0
+    }
+  },
+  "conversao": {
+    "score": 10.0,
+    "max": 25,
+    "details": {
+      "cta": 2.4,
+      "whatsapp": 3.0,
+      "orcamento": 1.6,
+      "formulario": 0.0,
+      "catalogo": 0.6,
+      "precos": 0.0,
+      "ecommerce": 0.0,
+      "captacao_lead": 0.0,
+      "prova_social": 0.8,
+      "oferta_diferenciais": 1.6
+    }
+  },
+  "tecnica": {
+    "score": 5.4,
+    "max": 10,
+    "details": {
+      "perf_mobile": 1.2,
+      "perf_desktop": 0.6,
+      "core_web_vitals": 0.8,
+      "responsividade": 1.6,
+      "acessibilidade": 0.2,
+      "https": 1.0
+    }
+  },
+  "recursos": {
+    "score": 2.0,
+    "max": 10,
+    "details": {
+      "catalogo_pesquisavel": 0,
+      "filtros": 0,
+      "orcamento_detalhado": 0,
+      "ecommerce": 0,
+      "pagamento_online": 0,
+      "whatsapp_crm": 1,
+      "area_cliente": 0,
+      "conteudo_educacional": 0,
+      "maps_social_reviews": 1,
+      "personalizacao": 0
+    }
+  },
+  "total": 47.5,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "WhatsApp onipresente (8 referências) com CTAs claros em toda a página",
+    "Layout limpo, moderno e visualmente consistente (Elementor bem executado)",
+    "Boa galeria de imagens (24+ fotos) mostrando produtos e instalações",
+    "Storytelling forte: 50 anos de história, linha do tempo, missão/visão/valores",
+    "Endereço, mapa incorporado e certificações ambientais reforçam confiança local"
+  ],
+  "problemas": [
+    "Nenhum formulário de contato ou orçamento — captação de lead depende 100% do WhatsApp",
+    "Sem dados estruturados (schema.org) e sem meta description, prejudicando SEO/SERP",
+    "Catálogo de produtos raso: apenas 3 blocos genéricos, sem páginas individuais por produto",
+    "Site é single-page (landing), sem páginas indexáveis para termos de cauda longa",
+    "Imagens com alt text vazio, prejudicando acessibilidade e SEO de imagem"
+  ],
+  "melhorias": [
+    "Adicionar formulário de orçamento estruturado (tipo de madeira, quantidade, uso) além do WhatsApp",
+    "Criar páginas de produto/categoria indexáveis com specs e preços de referência",
+    "Implementar schema.org (LocalBusiness/Product) e meta description por página"
+  ]
+}

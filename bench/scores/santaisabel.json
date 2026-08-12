@@ -1,0 +1,636 @@
+{
+  "site": "Madeireira Santa Isabel",
+  "location": "Palhoça, SC",
+  "url_local_file": "sites/santaisabel/index.html",
+  "evaluated_at": "2026-08-12",
+  "tech_notes": {
+    "builder": "Adobe Muse (widget/CSS class names: MuseLinkActive, MuseMenuActive, Muse.Utils, WebPro.Widget) - discontinued platform since 2020",
+    "viewport_meta": "absent - confirmed no <meta name=viewport> in <head>",
+    "layout": "fixed pixel-width absolute positioning (e.g. images 880px, 912px, 861px wide) - not fluid/responsive",
+    "headings": "no <h1> or <h2> found; section titles rendered as images (e.g. u992-4.png alt=CREDIBILIDADE) or plain <p> text",
+    "nav_text": "menu items use alt-text-on-blank-gif images (alt=Home, alt=Empresa...) instead of real anchor text - poor for SEO/accessibility",
+    "forms": "none found in markup",
+    "whatsapp": "no wa.me or whatsapp.com links found; a third-party widget script (wa.flsh.ws/install-widget) is loaded in <head> but produces no visible WhatsApp link/CTA in the markup",
+    "images_alt": "most images have empty alt=\"\" attributes",
+    "https": "page references https:// resources; forced-https fallback script present",
+    "footer_copyright": "shows 2012, inconsistent with 'since 1945' historical claim",
+    "social_links": "Facebook, YouTube, Instagram present in header",
+    "schema_org": "none found",
+    "product_scope": "single product category referenced repeatedly: 'casas pré-fabricadas' (madeira e alvenaria)",
+    "ctas": "generic 'SAIBA MAIS...' links only, no differentiated CTA copy"
+  },
+  "scores": {
+    "UI": {
+      "max": 15,
+      "subcriteria": {
+        "Profissionalismo": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4,
+          "note": "design circa 2010, Adobe Muse template, dated visual language"
+        },
+        "Hierarquia": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4,
+          "note": "no H1/H2, titles as images or plain paragraphs, no clear visual hierarchy"
+        },
+        "Tipografia": {
+          "raw": 1,
+          "max": 1,
+          "weighted": 0.2,
+          "note": "text mixed with rasterized image labels, inconsistent typographic control"
+        },
+        "Cores": {
+          "raw": 2,
+          "max": 1,
+          "weighted": 0.4,
+          "note": "no strong branding/color system evident"
+        },
+        "Imagens": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8,
+          "note": "57 images present (decent volume) but unoptimized fixed dimensions, empty alt text"
+        },
+        "Consistência": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8,
+          "note": "internally consistent template but outdated across all pages"
+        },
+        "Layout": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4,
+          "note": "fixed-width absolute-position layout (Adobe Muse), not fluid"
+        },
+        "Mobile": {
+          "raw": 0,
+          "max": 3,
+          "weighted": 0.0,
+          "note": "no viewport meta tag - site is not mobile-adapted at all"
+        }
+      },
+      "total_weighted": 3.4
+    },
+    "UX": {
+      "max": 20,
+      "subcriteria": {
+        "Encontrabilidade": {
+          "raw": 3,
+          "max": 3,
+          "weighted": 1.8,
+          "note": "clear top+footer menu labels (Home, Empresa, Projetos, Show Room, Contato, Materiaprima, Social, Dicas)"
+        },
+        "Navegação": {
+          "raw": 3,
+          "max": 2,
+          "weighted": 1.2,
+          "note": "functional dropdown submenu (Empresa>História/Estrutura), duplicated footer nav"
+        },
+        "Catálogo": {
+          "raw": 1,
+          "max": 3,
+          "weighted": 0.6,
+          "note": "no structured catalog, only a slideshow and single product category"
+        },
+        "Info produto": {
+          "raw": 1,
+          "max": 3,
+          "weighted": 0.6,
+          "note": "generic marketing paragraphs, no specs/models/dimensions/pricing"
+        },
+        "Contato": {
+          "raw": 4,
+          "max": 1,
+          "weighted": 0.8,
+          "note": "phone, email and address shown directly on homepage"
+        },
+        "WhatsApp": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no functioning WhatsApp link/CTA despite a chat widget script present"
+        },
+        "Orçamento": {
+          "raw": 0,
+          "max": 3,
+          "weighted": 0.0,
+          "note": "no quote/orçamento flow or form anywhere"
+        },
+        "Mobile UX": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no mobile adaptation at all - unusable on phones"
+        },
+        "Clareza": {
+          "raw": 2,
+          "max": 1,
+          "weighted": 0.4,
+          "note": "value proposition (casas pré-fabricadas madeira/alvenaria) communicated but generic"
+        }
+      },
+      "total_weighted": 5.4
+    },
+    "SEO": {
+      "max": 20,
+      "subcriteria": {
+        "SEO_tecnico": {
+          "raw": 1,
+          "max": 3,
+          "weighted": 0.6,
+          "note": "no viewport, nav text embedded as image alt-text, legacy Muse-generated markup"
+        },
+        "Titles_meta": {
+          "raw": 3,
+          "max": 2,
+          "weighted": 1.2,
+          "note": "title + meta description + meta keywords present and topically relevant"
+        },
+        "Headings": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no H1 or H2 anywhere on the page"
+        },
+        "Conteudo": {
+          "raw": 2,
+          "max": 3,
+          "weighted": 1.2,
+          "note": "some historical/company text but thin and repetitive across sections"
+        },
+        "Pagina_produto": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4,
+          "note": "no dedicated, structured product pages"
+        },
+        "SEO_local": {
+          "raw": 2,
+          "max": 3,
+          "weighted": 1.2,
+          "note": "full address and phone in plain text, no LocalBusiness schema or NAP consistency signals"
+        },
+        "GBP": {
+          "raw_note": "nv=1 applied directly (no verifiable evidence of Google Business Profile linkage)",
+          "max": 2,
+          "weighted": 1.0
+        },
+        "Indexacao": {
+          "raw": 3,
+          "max": 1,
+          "weighted": 0.6,
+          "note": "no evidence of blocking (robots/meta noindex), assumed default indexable"
+        },
+        "Autoridade": {
+          "raw_note": "nv=0.5 applied directly (no backlink/authority data available)",
+          "max": 1,
+          "weighted": 0.5
+        },
+        "Dados_estruturados": {
+          "raw": 0,
+          "max": 1,
+          "weighted": 0.0,
+          "note": "no schema.org markup found"
+        }
+      },
+      "total_weighted": 6.7
+    },
+    "Conversao": {
+      "max": 25,
+      "subcriteria": {
+        "CTA": {
+          "raw": 1,
+          "max": 3,
+          "weighted": 0.6,
+          "note": "only generic 'SAIBA MAIS...' repeated, no action-oriented copy"
+        },
+        "WhatsApp": {
+          "raw": 0,
+          "max": 3,
+          "weighted": 0.0,
+          "note": "no WhatsApp CTA/link present"
+        },
+        "Orcamento": {
+          "raw": 0,
+          "max": 4,
+          "weighted": 0.0,
+          "note": "no quote request mechanism"
+        },
+        "Formulario": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no forms of any kind"
+        },
+        "Catalogo": {
+          "raw": 1,
+          "max": 3,
+          "weighted": 0.6,
+          "note": "single product category, no real catalog structure"
+        },
+        "Precos": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no pricing information"
+        },
+        "Ecommerce": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "not applicable/absent"
+        },
+        "Lead": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "no lead capture (no forms, popups, newsletter)"
+        },
+        "Prova_social": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8,
+          "note": "social media links + credibility/exclusivity badges, but no testimonials/reviews"
+        },
+        "Diferenciais": {
+          "raw": 2,
+          "max": 2,
+          "weighted": 0.8,
+          "note": "since-1945 heritage and sustainability/reforestation content communicated"
+        }
+      },
+      "total_weighted": 2.8
+    },
+    "Tecnica": {
+      "max": 10,
+      "subcriteria": {
+        "Perf_mobile": {
+          "raw": 0,
+          "max": 3,
+          "weighted": 0.0,
+          "note": "no viewport, heavy unoptimized images (57), legacy jQuery stack"
+        },
+        "Perf_desktop": {
+          "raw": 2,
+          "max": 1,
+          "weighted": 0.4,
+          "note": "legacy but likely loads acceptably on desktop broadband"
+        },
+        "CWV": {
+          "raw": 1,
+          "max": 2,
+          "weighted": 0.4,
+          "note": "large unoptimized images and render-blocking scripts likely hurt LCP/CLS"
+        },
+        "Responsividade": {
+          "raw": 0,
+          "max": 2,
+          "weighted": 0.0,
+          "note": "fixed-width layout, no viewport meta - not responsive"
+        },
+        "Acessibilidade": {
+          "raw": 0,
+          "max": 1,
+          "weighted": 0.0,
+          "note": "empty alt attributes throughout, nav links carry no real text, no heading structure"
+        },
+        "HTTPS": {
+          "raw": 5,
+          "max": 1,
+          "weighted": 1.0,
+          "note": "HTTPS confirmed"
+        }
+      },
+      "total_weighted": 1.8
+    },
+    "Recursos": {
+      "max": 10,
+      "items": {
+        "WhatsApp": 0,
+        "Formulario_contato_orcamento": 0,
+        "Catalogo_produtos_online": 0,
+        "Blog_conteudo": 1,
+        "Redes_sociais": 1,
+        "Mapa_localizacao": 0,
+        "Certificacoes_selos": 0,
+        "Fotos_projetos_portfolio": 1,
+        "Depoimentos_avaliacoes": 0,
+        "Chat_online": 0
+      },
+      "note": "Blog/conteúdo credited via 'Dicas' page; Fotos/portfolio credited via 'Show Room' slideshow; Mapa não embutido (apenas endereço em texto); Chat online widget script presente no <head> (wa.flsh.ws) mas sem CTA/link funcional visível, não creditado",
+      "total_weighted": 3
+    }
+  },
+  "totals": {
+    "UI": 3.4,
+    "UX": 5.4,
+    "SEO": 6.7,
+    "Conversao": 2.8,
+    "Tecnica": 1.8,
+    "Recursos": 3,
+    "overall_score": 23.1,
+    "max_possible": 100,
+    "classification": "Crítico"
+  },
+  "summary": {
+    "pt": "Site institucional muito datado (Adobe Muse, plataforma descontinuada), sem adaptação mobile (zero viewport), sem formulários, sem WhatsApp funcional, sem orçamento online, sem preços e sem catálogo estruturado. Pontos fortes pontuais: HTTPS ativo, endereço/telefone/e-mail visíveis, presença em redes sociais e conteúdo histórico/institucional (desde 1945, reflorestamento). Classificação geral: Crítico (23.1/100)."
+  },
+  "total": 23.1,
+  "classificacao": "Crítico",
+  "name": "Madeireira Santa Isabel",
+  "id": "santaisabel",
+  "ui": {
+    "score": 3.4,
+    "max": 15,
+    "details": {
+      "Profissionalismo": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4,
+        "note": "design circa 2010, Adobe Muse template, dated visual language"
+      },
+      "Hierarquia": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4,
+        "note": "no H1/H2, titles as images or plain paragraphs, no clear visual hierarchy"
+      },
+      "Tipografia": {
+        "raw": 1,
+        "max": 1,
+        "weighted": 0.2,
+        "note": "text mixed with rasterized image labels, inconsistent typographic control"
+      },
+      "Cores": {
+        "raw": 2,
+        "max": 1,
+        "weighted": 0.4,
+        "note": "no strong branding/color system evident"
+      },
+      "Imagens": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8,
+        "note": "57 images present (decent volume) but unoptimized fixed dimensions, empty alt text"
+      },
+      "Consistência": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8,
+        "note": "internally consistent template but outdated across all pages"
+      },
+      "Layout": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4,
+        "note": "fixed-width absolute-position layout (Adobe Muse), not fluid"
+      },
+      "Mobile": {
+        "raw": 0,
+        "max": 3,
+        "weighted": 0.0,
+        "note": "no viewport meta tag - site is not mobile-adapted at all"
+      }
+    }
+  },
+  "ux": {
+    "score": 5.4,
+    "max": 20,
+    "details": {
+      "Encontrabilidade": {
+        "raw": 3,
+        "max": 3,
+        "weighted": 1.8,
+        "note": "clear top+footer menu labels (Home, Empresa, Projetos, Show Room, Contato, Materiaprima, Social, Dicas)"
+      },
+      "Navegação": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2,
+        "note": "functional dropdown submenu (Empresa>História/Estrutura), duplicated footer nav"
+      },
+      "Catálogo": {
+        "raw": 1,
+        "max": 3,
+        "weighted": 0.6,
+        "note": "no structured catalog, only a slideshow and single product category"
+      },
+      "Info produto": {
+        "raw": 1,
+        "max": 3,
+        "weighted": 0.6,
+        "note": "generic marketing paragraphs, no specs/models/dimensions/pricing"
+      },
+      "Contato": {
+        "raw": 4,
+        "max": 1,
+        "weighted": 0.8,
+        "note": "phone, email and address shown directly on homepage"
+      },
+      "WhatsApp": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no functioning WhatsApp link/CTA despite a chat widget script present"
+      },
+      "Orçamento": {
+        "raw": 0,
+        "max": 3,
+        "weighted": 0.0,
+        "note": "no quote/orçamento flow or form anywhere"
+      },
+      "Mobile UX": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no mobile adaptation at all - unusable on phones"
+      },
+      "Clareza": {
+        "raw": 2,
+        "max": 1,
+        "weighted": 0.4,
+        "note": "value proposition (casas pré-fabricadas madeira/alvenaria) communicated but generic"
+      }
+    }
+  },
+  "seo": {
+    "score": 6.7,
+    "max": 20,
+    "details": {
+      "SEO_tecnico": {
+        "raw": 1,
+        "max": 3,
+        "weighted": 0.6,
+        "note": "no viewport, nav text embedded as image alt-text, legacy Muse-generated markup"
+      },
+      "Titles_meta": {
+        "raw": 3,
+        "max": 2,
+        "weighted": 1.2,
+        "note": "title + meta description + meta keywords present and topically relevant"
+      },
+      "Headings": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no H1 or H2 anywhere on the page"
+      },
+      "Conteudo": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2,
+        "note": "some historical/company text but thin and repetitive across sections"
+      },
+      "Pagina_produto": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4,
+        "note": "no dedicated, structured product pages"
+      },
+      "SEO_local": {
+        "raw": 2,
+        "max": 3,
+        "weighted": 1.2,
+        "note": "full address and phone in plain text, no LocalBusiness schema or NAP consistency signals"
+      },
+      "GBP": {
+        "raw_note": "nv=1 applied directly (no verifiable evidence of Google Business Profile linkage)",
+        "max": 2,
+        "weighted": 1.0
+      },
+      "Indexacao": {
+        "raw": 3,
+        "max": 1,
+        "weighted": 0.6,
+        "note": "no evidence of blocking (robots/meta noindex), assumed default indexable"
+      },
+      "Autoridade": {
+        "raw_note": "nv=0.5 applied directly (no backlink/authority data available)",
+        "max": 1,
+        "weighted": 0.5
+      },
+      "Dados_estruturados": {
+        "raw": 0,
+        "max": 1,
+        "weighted": 0.0,
+        "note": "no schema.org markup found"
+      }
+    }
+  },
+  "conversao": {
+    "score": 2.8,
+    "max": 25,
+    "details": {
+      "CTA": {
+        "raw": 1,
+        "max": 3,
+        "weighted": 0.6,
+        "note": "only generic 'SAIBA MAIS...' repeated, no action-oriented copy"
+      },
+      "WhatsApp": {
+        "raw": 0,
+        "max": 3,
+        "weighted": 0.0,
+        "note": "no WhatsApp CTA/link present"
+      },
+      "Orcamento": {
+        "raw": 0,
+        "max": 4,
+        "weighted": 0.0,
+        "note": "no quote request mechanism"
+      },
+      "Formulario": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no forms of any kind"
+      },
+      "Catalogo": {
+        "raw": 1,
+        "max": 3,
+        "weighted": 0.6,
+        "note": "single product category, no real catalog structure"
+      },
+      "Precos": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no pricing information"
+      },
+      "Ecommerce": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "not applicable/absent"
+      },
+      "Lead": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "no lead capture (no forms, popups, newsletter)"
+      },
+      "Prova_social": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8,
+        "note": "social media links + credibility/exclusivity badges, but no testimonials/reviews"
+      },
+      "Diferenciais": {
+        "raw": 2,
+        "max": 2,
+        "weighted": 0.8,
+        "note": "since-1945 heritage and sustainability/reforestation content communicated"
+      }
+    }
+  },
+  "tecnica": {
+    "score": 1.8,
+    "max": 10,
+    "details": {
+      "Perf_mobile": {
+        "raw": 0,
+        "max": 3,
+        "weighted": 0.0,
+        "note": "no viewport, heavy unoptimized images (57), legacy jQuery stack"
+      },
+      "Perf_desktop": {
+        "raw": 2,
+        "max": 1,
+        "weighted": 0.4,
+        "note": "legacy but likely loads acceptably on desktop broadband"
+      },
+      "CWV": {
+        "raw": 1,
+        "max": 2,
+        "weighted": 0.4,
+        "note": "large unoptimized images and render-blocking scripts likely hurt LCP/CLS"
+      },
+      "Responsividade": {
+        "raw": 0,
+        "max": 2,
+        "weighted": 0.0,
+        "note": "fixed-width layout, no viewport meta - not responsive"
+      },
+      "Acessibilidade": {
+        "raw": 0,
+        "max": 1,
+        "weighted": 0.0,
+        "note": "empty alt attributes throughout, nav links carry no real text, no heading structure"
+      },
+      "HTTPS": {
+        "raw": 5,
+        "max": 1,
+        "weighted": 1.0,
+        "note": "HTTPS confirmed"
+      }
+    }
+  },
+  "recursos": {
+    "score": 3.0,
+    "max": 10,
+    "details": {}
+  }
+}

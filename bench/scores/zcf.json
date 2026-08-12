@@ -1,0 +1,32 @@
+{
+  "id": "zcf",
+  "name": "ZCF Madeireira",
+  "city": "Biguaçu",
+  "url": "madeiratratada.floripa.br",
+  "ui": {"s": 6.75, "d": {"profissionalismo": 1, "hierarquia": 1, "tipografia": 2, "cores": 2, "imagens": 1, "consistencia": 2, "layout": 2, "mobile": 2}},
+  "ux": {"s": 8.44, "d": {"encontrabilidade": 2, "navegacao": 2, "catalogo": 1, "info_produto": 1, "contato": 4, "whatsapp": 4, "orcamento": 2, "mobile_ux": 3, "clareza": 2}},
+  "seo": {"s": 5.6, "d": {"seo_tecnico": 1, "titles_meta": 2, "headings": 1, "conteudo": 2, "pag_produto": 0, "seo_local": 3, "gbp": 1, "indexacao": 2, "autoridade": 1, "dados_estruturados": 0}},
+  "conv": {"s": 12.85, "d": {"cta": 4, "whatsapp": 5, "orcamento": 2, "formulario": 0, "catalogo": 1, "precos": 1, "ecommerce": 0, "lead": 2, "prova_social": 1, "diferenciais": 1}},
+  "tech": {"s": 5.83, "d": {"perf_mobile": 3, "perf_desktop": 4, "cwv": 3, "responsividade": 3, "acessibilidade": 2, "https": 5}},
+  "rec": {"s": 1, "d": {"catalogo_pesquisavel": 0, "filtros": 0, "orcamento_detalhado": 0, "ecommerce": 0, "pagamento_online": 0, "whatsapp_crm": 1, "area_cliente": 0, "conteudo_educacional": 0, "maps_social_reviews": 0, "personalizacao": 0}},
+  "total": 40.47,
+  "cls": "Fraco",
+  "pro": [
+    "Botões de WhatsApp diretos em cada card de empresa, com mensagem pré-preenchida",
+    "Cobertura geográfica extensa (34+ bairros/cidades) favorece SEO local de cauda longa",
+    "HTTPS ativo e site responde rápido (site leve, ~100KB)",
+    "Links de telefone e WhatsApp funcionais em todos os cards"
+  ],
+  "con": [
+    "Não é o site de uma madeireira própria — é um diretório/agregador de terceiros que lista 'empresas parceiras', sem loja/marca própria consolidada",
+    "Sem H2, sem dados estruturados (schema.org), meta description ausente — SEO técnico fraco",
+    "Nenhum formulário de contato — único canal é WhatsApp/telefone",
+    "Sem catálogo de produtos, preços ou páginas de produto",
+    "Design minimalista datado, sem prova social (depoimentos/avaliações)"
+  ],
+  "fix": [
+    "Adicionar meta description, H2 semânticos e dados estruturados (LocalBusiness) por empresa listada",
+    "Criar páginas de produto/categoria com descrições e preços de referência",
+    "Incluir formulário de orçamento como canal alternativo ao WhatsApp"
+  ]
+}

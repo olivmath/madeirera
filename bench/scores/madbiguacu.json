@@ -1,0 +1,161 @@
+{
+  "id": "madbiguacu",
+  "name": "Madeireira Biguaçu",
+  "city": "Biguaçu",
+  "url": "madbiguacu.com.br",
+  "cms": "WordPress (Elementor + Layers Theme)",
+  "score_total": 60.0,
+  "classificacao": "Regular",
+  "dimensoes": {
+    "ui": {
+      "max": 15,
+      "raw_medio": 3.0,
+      "weighted": 9.0,
+      "subcriterios": {
+        "design_visual_branding": 3,
+        "imagens_produtos": 1,
+        "responsividade_layout": 4,
+        "consistencia_visual": 4
+      }
+    },
+    "ux": {
+      "max": 20,
+      "raw_medio": 3.8,
+      "weighted": 15.2,
+      "subcriterios": {
+        "clareza_navegacao": 4,
+        "organizacao_conteudo": 3,
+        "menu_mobile": 4,
+        "acesso_info_contato_horario": 5,
+        "clareza_proposta_valor": 3
+      }
+    },
+    "seo": {
+      "max": 20,
+      "raw_medio": 1.83,
+      "weighted": 7.33,
+      "subcriterios": {
+        "meta_description": 1,
+        "title_tag": 2,
+        "estrutura_headings": 1,
+        "schema_jsonld": 4,
+        "alt_text_imagens": 1,
+        "profundidade_conteudo_keywords": 2
+      }
+    },
+    "conversao": {
+      "max": 25,
+      "raw_medio": 3.0,
+      "weighted": 15.0,
+      "subcriterios": {
+        "clareza_frequencia_cta": 4,
+        "integracao_whatsapp": 5,
+        "formulario_contato": 0,
+        "acessibilidade_telefone_email": 4,
+        "sinais_de_confianca": 2
+      }
+    },
+    "tecnica": {
+      "max": 10,
+      "raw_medio": 4.0,
+      "weighted": 8.0,
+      "subcriterios": {
+        "https": 5,
+        "performance_cache": 4,
+        "limpeza_codigo": 2,
+        "indexabilidade_robots_canonical": 5
+      }
+    },
+    "recursos": {
+      "max": 10,
+      "raw_medio": 2.75,
+      "weighted": 5.5,
+      "subcriterios": {
+        "redes_sociais": 4,
+        "multicanal_contato": 4,
+        "riqueza_conteudo_blog_galeria": 1,
+        "profundidade_site_paginas": 2
+      }
+    }
+  },
+  "dados_conhecidos": {
+    "wordpress": true,
+    "title": "Inicio - Madeireira Biguaçu",
+    "meta_description": false,
+    "schema_jsonld_count": 1,
+    "viewport": true,
+    "whatsapp_links": 4,
+    "forms": 0,
+    "images": 2,
+    "redes_sociais": [
+      "Facebook",
+      "Instagram"
+    ],
+    "produtos_mencoes": {
+      "esquadria": 10,
+      "deck": 3
+    },
+    "ctas": {
+      "orcamento": 7,
+      "contato": 3,
+      "fale_conosco": 1
+    },
+    "https": true,
+    "paginas_menu": [
+      "Inicio",
+      "Produtos",
+      "Orçamento"
+    ],
+    "gtm_containers_duplicados": true
+  },
+  "pontos_fortes": [
+    "WhatsApp integrado em 4 pontos do site com mensagem pré-preenchida, reduzindo fricção de contato",
+    "Informações de contato completas e visíveis no cabeçalho: endereço, horário de funcionamento e 3 telefones (2 fixos + celular)",
+    "Schema JSON-LD completo (Organization, WebSite, WebPage, BreadcrumbList) via Yoast SEO",
+    "Presença ativa em redes sociais (Facebook e Instagram) com links diretos no header e footer",
+    "Navegação extremamente simples e direta (apenas 3 itens de menu), sem fricção para o usuário"
+  ],
+  "problemas": [
+    "Meta description ausente — Google gera snippet automático na busca, sem controle de CTR",
+    "Nenhum formulário de contato no site — captação de lead depende 100% de abrir WhatsApp ou discar telefone, sem fallback nem rastreamento de conversão via formulário",
+    "Apenas 2 imagens em todo o site (a mesma logo repetida no header e footer) — para uma marcenaria/fábrica de esquadrias, a ausência total de fotos de produtos e portfólio é crítica",
+    "Título de página genérico (\"Inicio - Madeireira Biguaçu\"), sem cidade/palavra-chave, e heading principal usa H3 em vez de H1 (estrutura de heading quebrada)",
+    "Google Tag Manager duplicado (2 containers GTM instalados simultaneamente: GTM-TB5ZDJJF e GTM-KX5TH6B) — desperdício técnico e risco de double-tracking"
+  ],
+  "melhorias": [
+    "Adicionar meta description otimizada, corrigir hierarquia de headings (H1 real) e preencher alt text descritivo em todas as imagens",
+    "Criar galeria de projetos/portfólio com fotos reais de esquadrias, portas, janelas e decks entregues, e oferecer formulário de orçamento como alternativa ao WhatsApp",
+    "Adicionar seção de depoimentos/avaliações de clientes para reforçar prova social — os quase 30 anos de mercado são um ativo de credibilidade ainda subutilizado no site"
+  ],
+  "total": 60.0,
+  "ui": {
+    "score": 9.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 15.2,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 7.3,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 15.0,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 8.0,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 5.5,
+    "max": 10,
+    "details": {}
+  }
+}

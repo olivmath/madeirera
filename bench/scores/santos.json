@@ -1,0 +1,116 @@
+{
+  "id": "santos",
+  "name": "Santos Madeiras",
+  "city": "Palhoça",
+  "url": "santosmadeiras.com.br",
+  "ui": {
+    "score": 11.4,
+    "max": 15,
+    "details": {
+      "profissionalismo": 4,
+      "hierarquia": 4,
+      "tipografia": 3,
+      "cores": 3,
+      "imagens": 4,
+      "consistencia": 4,
+      "layout": 4,
+      "mobile": 4
+    }
+  },
+  "ux": {
+    "score": 16.3,
+    "max": 20,
+    "details": {
+      "encontrabilidade": 4,
+      "navegacao": 4,
+      "catalogo": 5,
+      "info_produto": 4,
+      "contato": 4,
+      "whatsapp": 4,
+      "orcamento": 3,
+      "mobile_ux": 4,
+      "clareza": 4
+    }
+  },
+  "seo": {
+    "score": 12.3,
+    "max": 20,
+    "details": {
+      "seo_tecnico": 3,
+      "titles_meta": 1,
+      "headings": 2,
+      "conteudo": 4,
+      "paginas_produto": 4,
+      "seo_local": 3,
+      "gbp": 1,
+      "indexacao": 3,
+      "autoridade": 0.5,
+      "dados_estruturados": 5
+    }
+  },
+  "conversao": {
+    "score": 21.6,
+    "max": 25,
+    "details": {
+      "cta": 4,
+      "whatsapp": 5,
+      "orcamento": 3,
+      "formulario": 5,
+      "catalogo_produtos": 5,
+      "precos": 5,
+      "ecommerce": 5,
+      "captacao_lead": 5,
+      "prova_social": 3,
+      "oferta_diferenciais": 3
+    }
+  },
+  "tecnica": {
+    "score": 5.7,
+    "max": 10,
+    "details": {
+      "perf_mobile": 2,
+      "perf_desktop": 3,
+      "core_web_vitals": 2,
+      "responsividade": 4,
+      "acessibilidade": 3,
+      "https": 5
+    }
+  },
+  "recursos": {
+    "score": 8.0,
+    "max": 10,
+    "details": {
+      "catalogo_pesquisavel": 1,
+      "filtros": 1,
+      "orcamento_detalhado": 0,
+      "ecommerce": 1,
+      "pagamento_online": 1,
+      "whatsapp_crm": 1,
+      "area_cliente": 1,
+      "conteudo_educacional": 1,
+      "maps_social_reviews": 1,
+      "personalizacao": 0
+    }
+  },
+  "total": 75.3,
+  "classificacao": "Bom",
+  "pontos_fortes": [
+    "E-commerce completo (Nuvemshop) com carrinho, checkout e preços visíveis para centenas de produtos",
+    "Catálogo muito rico e segmentado (pinus, eucalipto, autoclave, deck) com centenas de SKUs",
+    "25 schemas JSON-LD (Product, Offer, Organization, BreadcrumbList) — base sólida de dados estruturados",
+    "Múltiplos canais de contato: WhatsApp direto (wa.me), telefone, 4 redes sociais e blog próprio",
+    "Newsletter e 30 formulários no site indicam forte captação de lead e ampla superfície de conversão"
+  ],
+  "problemas": [
+    "Título da home genérico ('Santos Madeiras', sem palavra-chave/localização) prejudica SEO e CTR em buscas",
+    "Ausência de tag H1 na home (produtos.html tem, mas a home não) — hierarquia de conteúdo fraca para SEO",
+    "Página pesada (794KB) e sem sinais claros de otimização — impacta performance mobile/Core Web Vitals",
+    "Muitos produtos 'Sem Estoque' aparecem no catálogo, gerando frustração e ruído na navegação",
+    "Sem dados de Google Business Profile verificáveis nem schema LocalBusiness/endereço explícito no HTML analisado"
+  ],
+  "melhorias": [
+    "Reescrever <title> e meta description de cada página com cidade + categoria de produto (SEO local)",
+    "Adicionar H1 único e descritivo na home, revisar hierarquia de headings do catálogo",
+    "Otimizar imagens/lazy-loading e reduzir payload da página para melhorar performance mobile"
+  ]
+}

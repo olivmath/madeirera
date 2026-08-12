@@ -1,0 +1,125 @@
+{
+  "id": "palhocacasas",
+  "name": "Palhoça Casas de Madeira",
+  "city": "Palhoça",
+  "url": "palhocacasasdemadeira.com.br",
+  "stack": "WordPress + Elementor 3.14.1 (Hello Elementor theme)",
+  "dimensoes": {
+    "ui": {
+      "max": 15,
+      "subcriterios": {
+        "design_visual": 2,
+        "consistencia_visual": 3,
+        "qualidade_imagens": 2
+      },
+      "raw_medio": 2.33,
+      "weighted": 7.0
+    },
+    "ux": {
+      "max": 20,
+      "subcriterios": {
+        "navegacao": 3,
+        "clareza_conteudo": 2,
+        "mobile_friendliness": 3,
+        "hierarquia_informacao": 1
+      },
+      "raw_medio": 2.25,
+      "weighted": 9.0
+    },
+    "seo": {
+      "max": 20,
+      "subcriterios": {
+        "meta_tags": 0,
+        "headers_estrutura": 1,
+        "schema_markup": 0,
+        "alt_text": 1
+      },
+      "raw_medio": 0.5,
+      "weighted": 2.0
+    },
+    "conversao": {
+      "max": 25,
+      "subcriterios": {
+        "ctas_visibilidade": 4,
+        "formularios": 0,
+        "whatsapp_integracao": 5,
+        "prova_social": 2
+      },
+      "raw_medio": 2.75,
+      "weighted": 13.75
+    },
+    "tecnica": {
+      "max": 10,
+      "subcriterios": {
+        "https_seguranca": 5,
+        "performance_cache": 3,
+        "codigo_limpo": 2
+      },
+      "raw_medio": 3.33,
+      "weighted": 6.67
+    },
+    "recursos": {
+      "max": 10,
+      "subcriterios": {
+        "redes_sociais": 0,
+        "profundidade_conteudo": 1,
+        "paginas_extras": 1
+      },
+      "raw_medio": 0.67,
+      "weighted": 2.0
+    }
+  },
+  "total_pontos": 40.42,
+  "total_max": 100,
+  "classificacao": "Fraco",
+  "pontos_fortes": [
+    "HTTPS habilitado com certificado válido",
+    "WhatsApp integrado em múltiplos pontos (header, hero, footer) com número e mensagem pré-preenchida",
+    "Menciona aceitação pelo financiamento habitacional da Caixa Econômica Federal (prova social/confiança)",
+    "Cache e minificação via plugin WPO-Minify melhoram tempo de carregamento",
+    "Destaca diferenciais como '20 anos de experiência' e atendimento estendido (08h-22h, incl. fins de semana e feriados)"
+  ],
+  "problemas": [
+    "H1 duplicado na página ('CASAS DE MADEIRA NA PALHOÇA' e 'Vamos começar?') — quebra a hierarquia semântica e prejudica SEO",
+    "Ausência total de meta description e tags Open Graph — baixo CTR em buscas e compartilhamento genérico em redes sociais",
+    "Nenhum schema.org (LocalBusiness/Product) implementado — perde rich snippets e visibilidade estruturada no Google",
+    "Nenhum formulário de contato/captura de lead — dependência exclusiva do WhatsApp limita geração de leads assíncronos",
+    "Conteúdo mínimo: página única com apenas 5 imagens, sem catálogo de produtos detalhado, sem blog e sem nenhum link de rede social"
+  ],
+  "melhorias": [
+    "Adicionar meta description, Open Graph e schema LocalBusiness/Product para melhorar SEO e compartilhamento social",
+    "Corrigir hierarquia de headings (H1 único, estrutura H2/H3 consistente) e implementar formulário de contato como alternativa ao WhatsApp",
+    "Expandir conteúdo do site: páginas de produtos (casas, pinus, eucalipto), galeria ampliada e vínculo com redes sociais para aumentar autoridade e engajamento"
+  ],
+  "total": 40.5,
+  "ui": {
+    "score": 7.0,
+    "max": 15,
+    "details": {}
+  },
+  "ux": {
+    "score": 9.0,
+    "max": 20,
+    "details": {}
+  },
+  "seo": {
+    "score": 2.0,
+    "max": 20,
+    "details": {}
+  },
+  "conversao": {
+    "score": 13.8,
+    "max": 25,
+    "details": {}
+  },
+  "tecnica": {
+    "score": 6.7,
+    "max": 10,
+    "details": {}
+  },
+  "recursos": {
+    "score": 2.0,
+    "max": 10,
+    "details": {}
+  }
+}
