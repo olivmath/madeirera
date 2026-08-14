@@ -1,0 +1,52 @@
+## 1. Content Extraction And Validation
+
+- [ ] 1.1 Extract and organize all text content from the current 6-page WebAcappella site (done — see `content.md`).
+- [ ] 1.2 Confirm business details with client: founding year, current hours, delivery area, preferred WhatsApp number, correct email domain spelling.
+- [ ] 1.3 Collect real product photos for the 13 wood species listed on the site, or confirm placeholder strategy for prototype.
+
+## 2. Responsive Site Structure
+
+- [ ] 2.1 Build mobile-first HTML structure with semantic elements: header, nav, main, sections, footer.
+- [ ] 2.2 Build responsive navigation with hamburger menu on mobile, horizontal menu on desktop.
+- [ ] 2.3 Build hero section with business positioning, service region, and primary CTA (WhatsApp or quote form).
+- [ ] 2.4 Build about section highlighting 27+ years in market, BR-101 location, large stock, regional coverage.
+- [ ] 2.5 Build product catalog section with cards for all 13 wood species showing name, photo placeholder, key attributes, and applications.
+- [ ] 2.6 Build contact/quote section with structured form (name, phone, city, product interest, message).
+- [ ] 2.7 Build footer with full address (CEP 88108-140), 3 phone numbers, domain email, WhatsApp link, and map link.
+- [ ] 2.8 Add viewport meta tag and responsive CSS ensuring no horizontal scroll on any device width.
+
+## 3. SEO And Semantic Structure
+
+- [ ] 3.1 Add one H1 per page/section with descriptive, keyword-relevant content (e.g., "Madeireira Baia Sul - Madeiras em Sao Jose, SC").
+- [ ] 3.2 Add H2 headings for each major section (Sobre, Produtos, Contato, etc.).
+- [ ] 3.3 Add unique title tag: "Madeireira Baia Sul | Madeiras em Sao Jose - Florianopolis - Palhoca".
+- [ ] 3.4 Add meta description targeting local search intent.
+- [ ] 3.5 Add Open Graph metadata (og:title, og:description, og:image, og:url).
+- [ ] 3.6 Add JSON-LD structured data for LocalBusiness with name, address, phones, email, geo coordinates, service area.
+- [ ] 3.7 Add alt text to all images (currently 1 image with empty alt).
+- [ ] 3.8 Add breadcrumb-style navigation indicators where applicable.
+
+## 4. Conversion And Lead Capture
+
+- [ ] 4.1 Build a quote request form with fields: assunto (Orcamento/Duvida/Sugestao), nome, telefone/WhatsApp, cidade/estado, produto de interesse, mensagem.
+- [ ] 4.2 Add visible CTA buttons in hero section and after product catalog ("Solicite um Orcamento", "Fale pelo WhatsApp").
+- [ ] 4.3 Configure WhatsApp floating button with contextual prefilled message including page context.
+- [ ] 4.4 Add click-to-call links on all phone numbers.
+- [ ] 4.5 Add click-to-email links on domain email addresses.
+- [ ] 4.6 Add form validation with visible error/success states.
+
+## 5. Visual Design And Assets
+
+- [ ] 5.1 Define color palette: warm wood tones (browns, creams) replacing the current cold navy/blue.
+- [ ] 5.2 Select typography: clean sans-serif for body, optional serif or display for headings.
+- [ ] 5.3 Create product card layout with photo area, species name, key attributes, applications badge, and quote CTA.
+- [ ] 5.4 Add wood texture or nature imagery to hero/background sections.
+- [ ] 5.5 Ensure sufficient contrast ratios for accessibility (WCAG AA minimum).
+
+## 6. Quality Gates
+
+- [ ] 6.1 Validate mobile rendering: no horizontal scroll, readable text without zoom, tappable buttons (min 44x44px).
+- [ ] 6.2 Validate SEO checklist: H1 present, meta description present, structured data valid, all images have alt text.
+- [ ] 6.3 Validate conversion paths: WhatsApp link works, form submits, phone numbers are clickable.
+- [ ] 6.4 Validate accessibility: keyboard navigation, form labels, contrast, semantic landmarks.
+- [ ] 6.5 Re-score against benchmark rubric — target: UI 10+/15, UX 14+/20, SEO 14+/19.5, Conversao 18+/25, Tech 8+/10.5, Recomendacao 6+/10. Total 70+/100.

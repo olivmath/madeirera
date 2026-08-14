@@ -1,0 +1,1421 @@
+<title>Benchmark Madeireiras GF</title>
+<style>
+@import url('data:text/css,');
+
+:root {
+  --bg: #f7f6f3;
+  --bg-card: #ffffff;
+  --bg-card-alt: #f0efeb;
+  --bg-badge: #e8e6e1;
+  --text: #1a1a18;
+  --text-muted: #6b6960;
+  --text-dim: #9c9a90;
+  --border: #ddd9d0;
+  --border-light: #eae7e0;
+  --accent: #2d6a4f;
+  --accent-light: #d4e8db;
+  --accent-text: #1b4332;
+  --red: #c0392b;
+  --red-light: #fbe8e6;
+  --red-text: #922b21;
+  --orange: #d4820a;
+  --orange-light: #fef3e0;
+  --orange-text: #7d4e00;
+  --yellow: #b7950b;
+  --yellow-light: #fdf8e1;
+  --blue: #2471a3;
+  --blue-light: #e0f0fa;
+  --critical: #c0392b;
+  --fraco: #d4820a;
+  --regular: #b7950b;
+  --bom: #2d6a4f;
+  --shadow-sm: 0 1px 3px rgba(26,26,24,0.06);
+  --shadow-md: 0 4px 12px rgba(26,26,24,0.08);
+  --radius: 8px;
+  --radius-lg: 12px;
+  --font-display: Georgia, 'Times New Roman', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1a1a18;
+    --bg-card: #242420;
+    --bg-card-alt: #2a2a26;
+    --bg-badge: #333330;
+    --text: #e8e6e1;
+    --text-muted: #a09e94;
+    --text-dim: #6b6960;
+    --border: #3a3a36;
+    --border-light: #2e2e2a;
+    --accent: #52b788;
+    --accent-light: #1b3a2a;
+    --accent-text: #95d5b2;
+    --red: #e74c3c;
+    --red-light: #3a1c18;
+    --red-text: #f5a8a0;
+    --orange: #f0a030;
+    --orange-light: #3a2c10;
+    --orange-text: #f5c878;
+    --yellow: #d4b520;
+    --yellow-light: #302c10;
+    --blue: #5dade2;
+    --blue-light: #1a2c3a;
+    --critical: #e74c3c;
+    --fraco: #f0a030;
+    --regular: #d4b520;
+    --bom: #52b788;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1a1a18;
+  --bg-card: #242420;
+  --bg-card-alt: #2a2a26;
+  --bg-badge: #333330;
+  --text: #e8e6e1;
+  --text-muted: #a09e94;
+  --text-dim: #6b6960;
+  --border: #3a3a36;
+  --border-light: #2e2e2a;
+  --accent: #52b788;
+  --accent-light: #1b3a2a;
+  --accent-text: #95d5b2;
+  --red: #e74c3c;
+  --red-light: #3a1c18;
+  --red-text: #f5a8a0;
+  --orange: #f0a030;
+  --orange-light: #3a2c10;
+  --orange-text: #f5c878;
+  --yellow: #d4b520;
+  --yellow-light: #302c10;
+  --blue: #5dade2;
+  --blue-light: #1a2c3a;
+  --critical: #e74c3c;
+  --fraco: #f0a030;
+  --regular: #d4b520;
+  --bom: #52b788;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* HEADER */
+.header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+}
+.header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  color: var(--text);
+}
+.header .subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+.header .meta-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+/* STATS BAR */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 24px 0;
+}
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.stat-card .label { font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; }
+.stat-card .value { font-size: 1.8rem; font-weight: 700; font-variant-numeric: tabular-nums; margin-top: 4px; }
+.stat-card .detail { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+
+/* RANKING TABLE */
+.ranking-section { padding: 32px 0; }
+.ranking-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+thead { background: var(--bg-card-alt); }
+thead th {
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  border-bottom: 2px solid var(--border);
+  white-space: nowrap;
+}
+thead th.num { text-align: right; }
+tbody tr { border-bottom: 1px solid var(--border-light); background: var(--bg-card); }
+tbody tr:hover { background: var(--bg-card-alt); }
+tbody td { padding: 10px 12px; }
+tbody td.num { text-align: right; font-weight: 500; }
+
+.cls-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.cls-bom { background: var(--accent-light); color: var(--accent-text); }
+.cls-regular { background: var(--yellow-light); color: var(--yellow); }
+.cls-fraco { background: var(--orange-light); color: var(--orange-text); }
+.cls-critico { background: var(--red-light); color: var(--red-text); }
+.cls-offline { background: var(--bg-badge); color: var(--text-dim); }
+
+.score-bar {
+  display: inline-block;
+  height: 6px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* PROBLEM MATRIX */
+.matrix-section { padding: 32px 0; }
+.matrix-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.matrix-section .desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-bottom: 16px;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.problem-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-sm);
+}
+.problem-card .p-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.problem-card .p-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.problem-card .p-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.problem-card .p-count {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-left: auto;
+  white-space: nowrap;
+}
+.problem-card .p-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.problem-card .affected-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.affected-chip {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: var(--bg-badge);
+  color: var(--text-muted);
+}
+.affected-chip.has-problem {
+  background: var(--red-light);
+  color: var(--red-text);
+  font-weight: 500;
+}
+.problem-card .fix-box {
+  background: var(--accent-light);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  font-size: 0.82rem;
+  color: var(--accent-text);
+}
+.fix-box strong { font-weight: 700; }
+
+/* SITE DETAILS */
+.details-section { padding: 32px 0; }
+.details-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+
+.site-detail {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.site-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.site-detail-header:hover { background: var(--bg-card-alt); }
+.site-detail-header .rank {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+  min-width: 32px;
+}
+.site-detail-header .info { flex: 1; }
+.site-detail-header .name { font-weight: 700; font-size: 1rem; }
+.site-detail-header .url-city { font-size: 0.78rem; color: var(--text-muted); }
+.site-detail-header .score-total {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.site-detail-header .chevron {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  transition: transform 0.2s;
+}
+.site-detail.open .chevron { transform: rotate(180deg); }
+.site-detail-body {
+  display: none;
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--border-light);
+}
+.site-detail.open .site-detail-body { display: block; }
+
+.score-breakdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+  margin: 16px 0;
+}
+.score-dim {
+  background: var(--bg-card-alt);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+.score-dim .dim-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dim); }
+.score-dim .dim-value { font-size: 1.3rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.score-dim .dim-max { font-size: 0.72rem; color: var(--text-dim); }
+
+.detail-section-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+  margin: 16px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pro-con-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+@media (max-width: 640px) { .pro-con-grid { grid-template-columns: 1fr; } }
+
+.pro-list, .con-list { list-style: none; }
+.pro-list li, .con-list li {
+  font-size: 0.82rem;
+  padding: 6px 0;
+  padding-left: 20px;
+  position: relative;
+  color: var(--text-muted);
+}
+.pro-list li::before { content: '+'; position: absolute; left: 0; font-weight: 800; color: var(--accent); }
+.con-list li::before { content: '!'; position: absolute; left: 2px; font-weight: 800; color: var(--red); font-size: 0.75rem; }
+
+.fix-list { list-style: none; margin-top: 8px; }
+.fix-list li {
+  font-size: 0.82rem;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  background: var(--accent-light);
+  border-radius: 6px;
+  color: var(--accent-text);
+  padding-left: 28px;
+  position: relative;
+}
+.fix-list li::before {
+  content: attr(data-n);
+  position: absolute;
+  left: 10px;
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+/* FILTER BAR */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.filter-btn {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+@media (max-width: 768px) {
+  .container { padding: 0 16px; }
+  .header h1 { font-size: 1.5rem; }
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .header .meta-row { flex-wrap: wrap; gap: 12px; }
+}
+</style>
+
+<div class="container">
+  <div class="header">
+    <h1>Benchmark de Sites — Madeireiras da Grande Florianopolis</h1>
+    <div class="subtitle">Analise comparativa de 16 sites de madeireiras em Palhoça, Florianopolis, São Jose e Biguaçu</div>
+    <div class="meta-row">
+      <span>16 empresas analisadas</span>
+      <span>6 dimensões avaliadas</span>
+      <span>Agosto 2026</span>
+    </div>
+  </div>
+
+  <div class="stats-bar" id="stats-bar"></div>
+
+  <div class="ranking-section">
+    <h2>Ranking Geral</h2>
+    <div class="filter-bar" id="filter-bar"></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Empresa</th>
+            <th>Cidade</th>
+            <th>Status</th>
+            <th class="num">UI</th>
+            <th class="num">UX</th>
+            <th class="num">SEO</th>
+            <th class="num">Conv.</th>
+            <th class="num">Tech</th>
+            <th class="num">Rec.</th>
+            <th class="num">Total</th>
+          </tr>
+        </thead>
+        <tbody id="ranking-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="matrix-section">
+    <h2>Problemas Mais Comuns — Checklist Acionavel</h2>
+    <div class="desc">Problemas ordenados por frequência. Cada item é acionavel: mostra quais sites são afetados e como corrigir.</div>
+    <div class="problem-grid" id="problem-grid"></div>
+  </div>
+
+  <div class="details-section">
+    <h2>Detalhamento por Site</h2>
+    <div id="site-details"></div>
+  </div>
+
+  <div class="footer">
+    Benchmark Madeireiras GF — Dados coletados agosto 2026 — Metodologia: avaliação manual + crawl automatizado
+  </div>
+</div>
+
+<script>
+const DATA = [
+  {
+    id:"santos", name:"Santos Madeiras", city:"Palhoça", url:"santosmadeiras.com.br", total:75.3, cls:"Bom",
+    scores:{ui:11.4, ux:16.3, seo:12.3, conv:21.6, tech:5.7, rec:8.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Santos Madeiras (genérico, sem keywords)",
+      meta_desc:"'Especializada em madeiras para casa e construção' — sem localização",
+      h1:"Ausente na home — produtos.html tem, home não",
+      schema:"25 JSON-LD (Product, Offer, Organization, BreadcrumbList)",
+      form:"30 formulários (Nuvemshop)",
+      whatsapp:"wa.me direto + múltiplos pontos",
+      https:true,
+      cms:"Nuvemshop (e-commerce)",
+      imgs_total:"200+", imgs_no_alt:"Parcial"
+    },
+    pro:[
+      "E-commerce completo (Nuvemshop) com carrinho, checkout e preços visíveis para centenas de produtos",
+      "Catálogo segmentado (pinus, eucalipto, autoclave, deck) com centenas de SKUs",
+      "25 schemas JSON-LD — melhor implementação de dados estruturados do benchmark",
+      "Newsletter + 30 formulários = forte captação de leads",
+      "Múltiplos canais: WhatsApp, telefone, 4 redes sociais, blog"
+    ],
+    con:[
+      "Title genérico 'Santos Madeiras' sem palavra-chave ou localização — CTR baixo na SERP",
+      "Sem H1 na home — hierarquia de conteúdo fraca para indexação",
+      "Página pesada (794KB) — impacta Core Web Vitals mobile",
+      "Muitos produtos 'Sem Estoque' visíveis no catálogo — frustração do usuário",
+      "Sem Google Business Profile verificável no HTML"
+    ],
+    fix:[
+      "Reescrever title para 'Santos Madeiras Palhoça | Pinus, Eucalipto, Deck — Loja Online'",
+      "Adicionar H1 descritivo na home e corrigir hierarquia de headings",
+      "Otimizar imagens (lazy-loading, WebP) para reduzir payload <400KB",
+      "Ocultar produtos sem estoque ou adicionar filtro 'Disponíveis'"
+    ]
+  },
+  {
+    id:"santamadeira", name:"Santa Madeira", city:"Palhoça", url:"santamadeiracasas.com.br", total:69.2, cls:"Regular",
+    scores:{ui:12.0, ux:14.6, seo:12.6, conv:16.2, tech:5.8, rec:8.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Casas Pré-Fabricadas em Madeira | Santa Madeira - Palhoça/SC",
+      meta_desc:"Ausente",
+      h1:"6 H1 tags na mesma página — hierarquia quebrada",
+      schema:"Ausente",
+      form:"ZERO formulários — depende 100% WhatsApp",
+      whatsapp:"Sim — múltiplos pontos",
+      https:true,
+      cms:"WordPress",
+      imgs_total:"40+", imgs_no_alt:"~15"
+    },
+    pro:[
+      "Design profissional com identidade visual forte e consistente",
+      "WhatsApp em 8+ pontos da página com CTAs 'Monte sua casa' e 'Contato'",
+      "Depoimentos de clientes com avaliações 5 estrelas",
+      "Catálogo de modelos de casas de madeira com fotos",
+      "Title bem otimizado com cidade e produto"
+    ],
+    con:[
+      "6 tags H1 na mesma página — hierarquia SEO completamente quebrada",
+      "Meta description AUSENTE — sem controle do snippet",
+      "ZERO formulários — captação depende 100% de WhatsApp",
+      "Zero dados estruturados (schema.org LocalBusiness/Product)",
+      "8 de 13 imagens sem alt text — acessibilidade prejudicada",
+      "Sem preços, sem e-commerce, sem blog"
+    ],
+    fix:[
+      "Reduzir de 6 H1 para 1 por página — usar H2/H3 para seções",
+      "Adicionar meta description e JSON-LD LocalBusiness",
+      "Criar formulário de orçamento (modelo da casa, tamanho, orçamento, telefone)",
+      "Preencher alt text em todas as imagens"
+    ]
+  },
+  {
+    id:"madbiguacu", name:"Madeireira Biguaçu", city:"Biguaçu", url:"madbiguacu.com.br", total:60.0, cls:"Regular",
+    scores:{ui:9.0, ux:15.2, seo:7.3, conv:15.0, tech:8.0, rec:5.5},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Inicio - Madeireira Biguaçu (genérico)",
+      meta_desc:"Ausente",
+      h1:"4 H1 tags: 'Fabricação de Esquadrias', 'Nós oferecemos...', 'O que a empresa pode fazer?', 'Mais informações?'",
+      schema:"JSON-LD via Yoast (Organization, WebSite, WebPage, BreadcrumbList)",
+      form:"Nenhum formulário",
+      whatsapp:"4 pontos com mensagem pré-preenchida",
+      https:true,
+      cms:"WordPress + Yoast SEO",
+      imgs_total:"2 (mesma logo repetida)", imgs_no_alt:"2"
+    },
+    pro:[
+      "WhatsApp em 4 pontos do site com mensagem pré-preenchida",
+      "Contato completo no header: endereço, horário, 3 telefones",
+      "Schema JSON-LD via Yoast SEO",
+      "Facebook e Instagram com links diretos",
+      "Navegação simples e direta (3 itens)"
+    ],
+    con:[
+      "Meta description AUSENTE — Google gera snippet automático",
+      "ZERO formulários — captação depende 100% de WhatsApp/telefone",
+      "Apenas 2 imagens em TODO o site — zero fotos de produtos/portfólio",
+      "Título genérico 'Inicio - Madeireira Biguaçu' — sem palavras-chave",
+      "GTM duplicado (2 containers instalados) — double-tracking"
+    ],
+    fix:[
+      "Adicionar meta description: 'Madeireira Biguaçu — esquadrias, portas e janelas de madeira há 30 anos'",
+      "Criar galeria de portfólio com fotos reais de esquadrias, portas e janelas entregues",
+      "Adicionar formulário de orçamento (nome, produto, medidas, telefone)",
+      "Remover GTM duplicado — manter apenas 1 container",
+      "Corrigir heading: trocar H3 por H1 semântico"
+    ]
+  },
+  {
+    id:"gilmar", name:"Madeireira Gilmar", city:"Florianópolis", url:"madeireiragilmar.com.br", total:59.4, cls:"Fraco",
+    scores:{ui:11.2, ux:12.4, seo:10.6, conv:15.6, tech:7.5, rec:2.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Ausente no HTML — problema SEO crítico",
+      meta_desc:"Ausente",
+      h1:"1 H1: 'A mais alta qualidade em madeiramento.'",
+      schema:"2 blocos JSON-LD",
+      form:"Nenhum formulário",
+      whatsapp:"Sim — link direto",
+      https:true,
+      cms:"Wix",
+      imgs_total:"15+", imgs_no_alt:"Parcial (AVIF/WebP otimizados)"
+    },
+    pro:[
+      "Site profissional em Wix com identidade visual clara (logo 3D, paleta consistente)",
+      "JSON-LD implementado + meta description bem escrita com telefone",
+      "Imagens otimizadas em AVIF/WebP — boa performance de mídia",
+      "Entrega rápida e gratuita destacada como CTA",
+      "Contato completo: WhatsApp, telefone, email, endereço"
+    ],
+    con:[
+      "Nenhum H1 — hierarquia semântica quebrada, prejudica SEO on-page",
+      "ZERO formulários — depende só de WhatsApp/telefone",
+      "Catálogo restrito a 3 categorias sem página individual de produto",
+      "Sem preços de referência, sem depoimentos/certificações",
+      "Meta description duplica o title — desperdício de SERP real estate"
+    ],
+    fix:[
+      "Adicionar H1: 'Madeireira Gilmar — Madeiras em Florianópolis com Entrega Grátis'",
+      "Criar formulário de orçamento estruturado com campos: tipo de madeira, quantidade, uso",
+      "Expandir catálogo: páginas individuais para vigamentos, eucalipto roliço, tábuas com preços"
+    ]
+  },
+  {
+    id:"lokal", name:"Lokal Madeiras e Esquadrias", city:"Florianópolis", url:"madeireiralokal.com.br", total:57.0, cls:"Fraco",
+    scores:{ui:10.5, ux:13.8, seo:7.6, conv:16.4, tech:6.7, rec:2.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Ausente",
+      meta_desc:"Ausente",
+      h1:"Ausente — nenhum H1",
+      schema:"Ausente",
+      form:"Sim — link para formulário em página separada",
+      whatsapp:"2 números inline: (48) 99190-0584 e (48) 99931-3355",
+      https:true,
+      cms:"PHP-Fusion (framework legacy 2002-2023)",
+      imgs_total:"63+", imgs_no_alt:"42+"
+    },
+    pro:[
+      "Catálogo diversificado: portas, janelas, assoalhos, decks, telhados, esquadrias",
+      "Dois WhatsApp ativos + seção 'Orçamento Online' com formulário",
+      "20+ anos de mercado, horário, endereço e CNPJ visíveis",
+      "Presença: Facebook, Instagram, YouTube, Google Maps embutido",
+      "19 imagens de produtos instalados no slideshow"
+    ],
+    con:[
+      "Title tag AUSENTE — problema crítico, Google inventa o título",
+      "Meta description AUSENTE — sem controle do snippet na SERP",
+      "Nenhum H1/H2 semântico — SEO técnico inexistente para o volume de conteúdo",
+      "42+ imagens sem alt text — acessibilidade e SEO de imagem severamente prejudicados",
+      "CMS PHP-Fusion é obsoleto — risco de segurança e limitações graves",
+      "Popup publicitário prejudica CWV (CLS) e primeira impressão",
+      "'Blog Lokal' no menu sem conteúdo — link morto"
+    ],
+    fix:[
+      "URGENTE: Adicionar title tag em todas as páginas: 'Lokal Madeiras — Esquadrias e Portas de Madeira em Florianópolis'",
+      "Adicionar meta description e implementar H1/H2 semânticos",
+      "Migrar de PHP-Fusion para WordPress ou plataforma moderna — CMS atual é risco de segurança",
+      "Preencher alt text em todas as 42+ imagens",
+      "Remover popup ou tornar opcional após 30s"
+    ]
+  },
+  {
+    id:"madefuturo", name:"Madeireira Madefuturo", city:"Palhoça", url:"madefuturo.com.br", total:56.0, cls:"Fraco",
+    scores:{ui:12.0, ux:12.0, seo:8.0, conv:10.0, tech:8.0, rec:6.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Não visível (SSR/hydration issue)",
+      meta_desc:"Ausente",
+      h1:"Ausente — hero title usa <div>",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"3 pontos: header, hero, footer. (48) 98468-5261",
+      https:true,
+      cms:"Next.js (SSG/export estático)",
+      imgs_total:"25+", imgs_no_alt:"Quase todas (placeholders base64)"
+    },
+    pro:[
+      "Design visual autoral com identidade consistente (paleta, tipografia Lato+Unna, hover/zoom)",
+      "Stack moderna: Next.js com export estático, lazy loading, font-display:swap",
+      "HTTPS + meta tags OG e Twitter Card para compartilhamento social",
+      "WhatsApp em 3 pontos (header, hero, footer) + loja Vendizap",
+      "Catálogo com descrições técnicas (dimensões, tipos de madeira, aplicações)"
+    ],
+    con:[
+      "Nenhum H1 — hero title é <div>, quebra hierarquia semântica",
+      "Meta description AUSENTE — SERP snippet não controlado",
+      "ZERO formulários de contato/orçamento — conversão 100% via WhatsApp",
+      "Todas as imagens com alt vazio — perda total de SEO de imagem",
+      "Ausência total de dados estruturados (JSON-LD)",
+      "Nenhuma prova social (depoimentos, avaliações, fotos de obras)"
+    ],
+    fix:[
+      "Trocar <div> do hero por <h1> real: 'Madeireira Madefuturo — Madeiras Tratadas em Palhoça'",
+      "Criar formulário de orçamento (nome, produto, quantidade, cidade) como alternativa ao WhatsApp",
+      "Implementar JSON-LD LocalBusiness com endereço, telefone e horário",
+      "Preencher alt text em todas as imagens: 'Deck de pinus tratado 4x4m — Madeireira Madefuturo'"
+    ]
+  },
+  {
+    id:"cambirela", name:"Madeireira Cambirela", city:"Palhoça", url:"madeireiracambirela.com.br", total:52.4, cls:"Fraco",
+    scores:{ui:9.3, ux:10.8, seo:8.4, conv:10.7, tech:5.2, rec:8.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"MADEIREIRA CAMBIRELA (genérico, idêntico em todas as páginas)",
+      meta_desc:"Ausente",
+      h1:"Sim — 'Construa com qualidade e sustentabilidade'",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"3 números diferentes: (48) 99205-8040 Denise, (48) 99986-0529 Amanda, (48) 99604-1469 Adriana",
+      https:true,
+      cms:"WordPress",
+      imgs_total:"30+", imgs_no_alt:"Maioria"
+    },
+    pro:[
+      "WhatsApp muito presente (30 referências no código, botão fixo + popup)",
+      "Redes sociais ativas: Instagram, Facebook, YouTube, Twitter",
+      "Seção de depoimentos de clientes como prova social",
+      "Catálogo amplo (25+ produtos: pinus, deck, forro, casas pré-fabricadas)",
+      "HTTPS ativo e layout responsivo com media queries"
+    ],
+    con:[
+      "ZERO formulários de contato/orçamento — 100% WhatsApp",
+      "3 números de WhatsApp diferentes espalhados pelo site — confuso",
+      "Meta description AUSENTE em todas as páginas",
+      "Title genérico 'MADEIREIRA CAMBIRELA' idêntico em todas as URLs",
+      "Zero dados estruturados (schema.org) apesar de usar WordPress",
+      "Apenas 8 imagens para 25+ produtos — sem fotos individuais",
+      "Link do Instagram malformado: 'http://@madeireiracambirela' — URL quebrada"
+    ],
+    fix:[
+      "Unificar WhatsApp: 1 número principal com direcionamento interno",
+      "Instalar plugin Yoast SEO: meta description + JSON-LD LocalBusiness automáticos",
+      "Criar páginas de produto: pinus, deck, forro etc. com fotos, specs e faixa de preço",
+      "Corrigir link do Instagram para URL válida",
+      "Adicionar formulário de orçamento com campos: produto, quantidade, telefone"
+    ]
+  },
+  {
+    id:"silva", name:"Madeireira Silva", city:"Palhoça", url:"madeireirasilva.ind.br", total:52.2, cls:"Fraco",
+    scores:{ui:10.4, ux:12.0, seo:9.0, conv:11.2, tech:5.6, rec:4.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"MadeireiraSilva (sem espaço, sem localização)",
+      meta_desc:"Transformando lares com madeira sustentável 57 anos de história | 3ª geração",
+      h1:"Sim — 'Transformando lares com madeira sustentável!'",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"Múltiplos: nav, hero, fale conosco. +55 48 99858-5524",
+      https:true,
+      cms:"Lovable (SPA client-side)",
+      imgs_total:"27", imgs_no_alt:"15+"
+    },
+    pro:[
+      "Credibilidade forte: 57 anos de história, 3ª geração, 4.9/5 com 70 avaliações Google",
+      "Diferencial técnico exclusivo: tecnologia 'Encaixe Deep Fitting'",
+      "Posicionamento sustentável: '100% Madeira de Reflorestamento'",
+      "Depoimentos autênticos de clientes",
+      "2 endereços, horários, CNPJ e múltiplos canais de contato"
+    ],
+    con:[
+      "SPA client-side sem SSR — Google pode não indexar corretamente",
+      "Title 'MadeireiraSilva' sem espaço e sem localização — SEO fraco",
+      "ZERO formulários — canal único é WhatsApp",
+      "Nenhum preço visível em nenhum produto",
+      "Zero dados estruturados (schema.org) — perde rich snippets",
+      "Sem páginas individuais de produto — tudo em single page"
+    ],
+    fix:[
+      "Implementar SSR ou pré-render (Next.js SSG) para indexação correta",
+      "Corrigir title: 'Madeireira Silva — Madeiras Sustentáveis em Palhoça | 57 Anos'",
+      "Criar formulário de orçamento com upload de projeto/medidas",
+      "Adicionar JSON-LD LocalBusiness e páginas de produto individuais"
+    ]
+  },
+  {
+    id:"ceratto", name:"Ceratto Madeiras", city:"Biguaçu", url:"cerattomadeiras.com.br", total:50.0, cls:"Fraco",
+    scores:{ui:8.2, ux:12.0, seo:7.8, conv:11.6, tech:5.4, rec:5.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Ceratto Madeiras – Sua madeireira em Biguaçu e Região – A Ceratto... (extremamente longo)",
+      meta_desc:"Ausente",
+      h1:"8 tags H1 na mesma página — PIOR caso do benchmark",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"Botões inline 3+ instâncias. (48) 99961-1658",
+      https:true,
+      cms:"WordPress",
+      imgs_total:"16", imgs_no_alt:"15 de 16"
+    },
+    pro:[
+      "WhatsApp integrado com CTAs 'Enviar WhatsApp' em múltiplos pontos",
+      "Preços exibidos: Kit Tábuas R$450, Tábua Churrasco R$200, Petisqueiras R$150",
+      "Múltiplos canais: telefone, e-mail, WhatsApp, Google Maps",
+      "Posicionamento local claro 'Biguaçu e Região' — bom para SEO local",
+      "HTTPS ativo + tema responsivo (Astra)"
+    ],
+    con:[
+      "Title EXTREMAMENTE longo e keyword-stuffed — péssimo para SERP (cortado)",
+      "Meta description AUSENTE",
+      "8 tags H1 na mesma página — PIOR caso do benchmark",
+      "Zero dados estruturados (JSON-LD)",
+      "ZERO formulários — sem captação de lead além do WhatsApp",
+      "15 de 16 imagens sem alt text",
+      "Email Gmail genérico (cerattomadeiras@gmail.com)",
+      "Página de móveis rústicos retorna 404 — link quebrado"
+    ],
+    fix:[
+      "Reescrever title: 'Ceratto Madeiras — Madeireira em Biguaçu SC' (max 60 chars)",
+      "Adicionar meta description: 'Madeiras tratadas, móveis rústicos e kit tábuas em Biguaçu'",
+      "Corrigir para 1 H1 por página + implementar JSON-LD LocalBusiness",
+      "Adicionar formulário de orçamento (tipo, medidas, telefone)",
+      "Corrigir link da página de móveis rústicos (404)"
+    ]
+  },
+  {
+    id:"fontana", name:"Madeireira Fontana", city:"São José", url:"fontanamadeireira.com.br", total:48.3, cls:"Fraco",
+    scores:{ui:10.0, ux:12.0, seo:8.0, conv:11.0, tech:3.3, rec:4.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Madeireira Fontana",
+      meta_desc:"Ausente em TODAS as páginas",
+      h1:"Ausente na home — presente em páginas internas",
+      schema:"Ausente",
+      form:"AUSENTE — nenhum formulário em nenhuma página (nem na de contato!)",
+      whatsapp:"ZERO WhatsApp em TODO o site",
+      https:"Incerto — possível HTTP",
+      cms:"WordPress (possivelmente desatualizado)",
+      imgs_total:"48+", imgs_no_alt:"8/8 na home (100%)"
+    },
+    pro:[
+      "30+ anos de história (fundada 1985) — forte credibilidade institucional",
+      "17 tipos de madeira listados (pinus, angelim, cedro, cumaru, itaúba...)",
+      "Depoimentos com marcação Schema.org/Review",
+      "Múltiplas opções de pagamento (Visa, Master, Construcard, cheque, boleto)",
+      "Página dedicada de galeria com fotos"
+    ],
+    con:[
+      "ZERO WhatsApp em todo o site — canal mais importante do setor AUSENTE",
+      "ZERO formulários — página de contato existe mas sem form!",
+      "Meta description AUSENTE em todas as páginas",
+      "WordPress possivelmente v4.3.34 (2015!) com XML-RPC habilitado — RISCO DE SEGURANÇA ALTO",
+      "Home sem H1 + lang='en-US' incorreto para conteúdo pt-BR",
+      "17 madeiras listadas mas sem ficha técnica, preços ou página individual",
+      "Zero redes sociais vinculadas"
+    ],
+    fix:[
+      "URGENTE: Atualizar WordPress (ou migrar) e desabilitar XML-RPC — versão 2015 é vulnerável",
+      "Adicionar botão fixo de WhatsApp click-to-chat em todas as páginas",
+      "Criar formulário de contato na página de contato com Contact Form 7",
+      "Adicionar meta description e corrigir lang para 'pt-BR'",
+      "Criar páginas individuais para cada tipo de madeira com preços"
+    ]
+  },
+  {
+    id:"jlcorrea", name:"JL Corrêa Madeiras", city:"Palhoça", url:"jlcorreamadeiras.com.br", total:47.5, cls:"Fraco",
+    scores:{ui:11.2, ux:9.6, seo:9.3, conv:10.0, tech:5.4, rec:2.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"JL Corrêa Madeiras JL – O melhor para sua obra!",
+      meta_desc:"Ausente",
+      h1:"7 tags H1: nome, história, missão/visão, especialidades, produtos, por quê, visite-nos",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"3 instâncias: hero, footer, contato. (48) 99697-3814",
+      https:true,
+      cms:"WordPress + Elementor",
+      imgs_total:"28", imgs_no_alt:"27 (96% — 2º pior do benchmark)"
+    },
+    pro:[
+      "WhatsApp em 8 referências com CTAs claros em toda a página",
+      "Layout limpo e moderno — Elementor bem executado",
+      "Galeria com 24+ fotos de produtos e instalações",
+      "Storytelling forte: 50 anos de história, linha do tempo, missão/visão/valores",
+      "Certificações ambientais e mapa incorporado"
+    ],
+    con:[
+      "Title tag AUSENTE no HTML — SEO gravemente prejudicado",
+      "Meta description AUSENTE",
+      "ZERO formulários — captação 100% WhatsApp",
+      "100% das imagens (10/10) sem alt text — acessibilidade zero",
+      "Zero dados estruturados (JSON-LD)",
+      "22 tags H2 — muitas decorativas, não semânticas ('Ligue', 'WhatsApp', 'Segunda à Sexta')",
+      "Single-page sem páginas indexáveis para SEO de cauda longa",
+      "Catálogo raso: 3 blocos genéricos sem páginas de produto"
+    ],
+    fix:[
+      "Adicionar title: 'JL Corrêa Madeiras — 50 Anos em Palhoça | Madeiras Certificadas'",
+      "Adicionar meta description e JSON-LD LocalBusiness",
+      "Criar formulário de orçamento: tipo de madeira, quantidade, uso, telefone",
+      "Reduzir H2 de 22 para ~6 semânticos e criar páginas de produto separadas",
+      "Preencher alt text em todas as 10 imagens"
+    ]
+  },
+  {
+    id:"madecor", name:"Madeireira Madecor", city:"Palhoça", url:"madeireiramadecor.com.br", total:41.2, cls:"Fraco",
+    scores:{ui:8.0, ux:8.4, seo:4.8, conv:12.5, tech:4.5, rec:3.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Ausente ou não detectado",
+      meta_desc:"Ausente (og:description também vazio)",
+      h1:"Sim — 'Madeireira Madecor'",
+      schema:"Ausente",
+      form:"1 formulário (7 campos) com captcha anti-spam",
+      whatsapp:"2 instâncias: barra flutuante + contato. (48) 98400-5122. Link usa HTTP",
+      https:"NÃO — site inteiro em HTTP",
+      cms:"Mobirise (page builder)",
+      imgs_total:"62", imgs_no_alt:"62 (100% — pior do benchmark)"
+    },
+    pro:[
+      "WhatsApp com mensagem pré-preenchida em 2 seções",
+      "Google Maps incorporado para localização",
+      "Telefones expostos em múltiplos pontos",
+      "Site responsivo (Bootstrap + viewport meta)",
+      "Formulário de contato funcional com captcha"
+    ],
+    con:[
+      "SEM HTTPS — navegadores mostram 'Não Seguro' — penalização direta no Google",
+      "62 imagens sem alt text — PIOR acessibilidade de todo o benchmark",
+      "Galeria duplicada: mesmas 21 fotos em grid + modal",
+      "Meta description e og:description VAZIAS",
+      "Zero dados estruturados (schema.org)",
+      "Email Gmail genérico (madeirasmadecor@gmail.com)",
+      "Catálogo INEXISTENTE: sem produtos, preços ou fichas técnicas",
+      "Mobirise como CMS — extremamente limitado em SEO e manutenção",
+      "Nome no Maps diferente do site: 'Madeireira Palhoça' vs 'Madeireira Madecor'",
+      "Link WhatsApp usa HTTP em vez de HTTPS"
+    ],
+    fix:[
+      "URGENTE: Migrar para HTTPS (Let's Encrypt gratuito) — prioridade #1",
+      "Criar catálogo: páginas de produto com espécie, dimensões, tratamento, preço",
+      "Migrar de Mobirise para WordPress ou Wix — CMS atual não tem futuro",
+      "Corrigir nome no Google Maps para 'Madeireira Madecor'",
+      "Trocar email para domínio próprio: contato@madeireiramadecor.com.br"
+    ]
+  },
+  {
+    id:"palhocacasas", name:"Palhoça Casas de Madeira", city:"Palhoça", url:"palhocacasasdemadeira.com.br", total:40.5, cls:"Fraco",
+    scores:{ui:7.0, ux:9.0, seo:2.0, conv:13.8, tech:6.7, rec:2.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Presente (genérico)",
+      meta_desc:"Ausente",
+      h1:"2 H1 duplicados — hierarquia quebrada",
+      schema:"Ausente",
+      form:"Nenhum",
+      whatsapp:"Múltiplos pontos: header, hero, footer",
+      https:true,
+      cms:"WordPress",
+      imgs_total:"5", imgs_no_alt:"Parcial"
+    },
+    pro:[
+      "HTTPS habilitado",
+      "WhatsApp em header, hero e footer com mensagem pré-preenchida",
+      "Menciona financiamento Caixa — prova social/confiança",
+      "Cache/minificação via WPO-Minify",
+      "20 anos de experiência + atendimento estendido (08h-22h, fins de semana)"
+    ],
+    con:[
+      "H1 DUPLICADO na página — hierarquia semântica quebrada",
+      "Meta description e Open Graph AUSENTES",
+      "Zero schema.org (LocalBusiness/Product)",
+      "ZERO formulários — dependência exclusiva do WhatsApp",
+      "Conteúdo mínimo: 1 página com 5 imagens, sem catálogo, sem blog, sem redes sociais"
+    ],
+    fix:[
+      "Corrigir para 1 H1 único + estrutura H2/H3",
+      "Adicionar meta description e Open Graph",
+      "Implementar schema LocalBusiness/Product",
+      "Criar formulário de contato/orçamento",
+      "Expandir: páginas de produtos, galeria ampliada, links de redes sociais"
+    ]
+  },
+  {
+    id:"zcf", name:"ZCF Madeireira", city:"Biguaçu", url:"madeiratratada.floripa.br", total:40.5, cls:"Fraco",
+    scores:{ui:6.8, ux:8.4, seo:5.6, conv:12.8, tech:5.8, rec:1.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Presente",
+      meta_desc:"Ausente",
+      h1:"Presente",
+      schema:"Ausente",
+      form:"Nenhum",
+      whatsapp:"Botões diretos em cada card com mensagem pré-preenchida",
+      https:true,
+      cms:"Custom/estático",
+      imgs_total:"~10", imgs_no_alt:"Parcial"
+    },
+    pro:[
+      "WhatsApp direto em cada card de empresa",
+      "Cobertura geográfica extensa (34+ bairros/cidades) — SEO local",
+      "HTTPS + site leve (~100KB)",
+      "Links telefone/WhatsApp funcionais"
+    ],
+    con:[
+      "NÃO é madeireira própria — é diretório/agregador de terceiros",
+      "Sem H2, sem dados estruturados, sem meta description — SEO fraco",
+      "ZERO formulários",
+      "Sem catálogo de produtos, preços ou páginas de produto",
+      "Design datado, sem prova social"
+    ],
+    fix:[
+      "Adicionar meta description e H2 semânticos",
+      "Implementar JSON-LD LocalBusiness por empresa listada",
+      "Criar páginas de produto/categoria com preços",
+      "Adicionar formulário de orçamento"
+    ]
+  },
+  {
+    id:"reitz", name:"Reitz Esquadrias e Madeiras", city:"São José", url:"esquadriasreitz.com.br", total:38.7, cls:"Crítico",
+    scores:{ui:7.0, ux:10.7, seo:6.0, conv:10.0, tech:2.0, rec:3.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Reitz Esquadrias e Madeiras - Barreiros, São José, SC",
+      meta_desc:"Fábrica de portas, janelas e esquadrias de madeira",
+      h1:"Ausente no HTML retornado (servidor envia página incompleta — 1023 bytes)",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"Não verificável (página incompleta)",
+      https:"CRÍTICO — cert SSL de uni5.net não cobre o domínio. Site parcialmente inacessível.",
+      cms:"PHP puro (custom, por TAGX). Conditional comments para IE8/IE9.",
+      imgs_total:"0 no HTML retornado (página quebrada)", imgs_no_alt:"N/A"
+    },
+    pro:[
+      "Title e meta description bem direcionados ao nicho local",
+      "5 links WhatsApp com mensagem pré-preenchida",
+      "Alt text presente em TODAS as 20 imagens — melhor acessibilidade de imagem do benchmark",
+      "Nicho especializado (esquadrias/portas/janelas de madeira)",
+      "Viewport mobile configurado"
+    ],
+    con:[
+      "CRÍTICO: Servidor retorna apenas 1023 bytes — PHP includes falhando, página sem <body>",
+      "CRÍTICO: Certificado SSL pertence a *.uni5.net — hostname mismatch, navegadores bloqueiam acesso",
+      "ZERO formulários — toda conversão dependia de WhatsApp/telefone",
+      "lang='en-US' quando conteúdo é 100% pt-BR",
+      "Scripts referenciando URLs HTTP descontinuadas (html5shiv, css3-mediaqueries)",
+      "Zero redes sociais e ZERO analytics — impossível medir tráfego"
+    ],
+    fix:[
+      "URGENTE: Corrigir servidor — PHP includes falhando, site praticamente offline",
+      "Instalar certificado SSL correto para esquadriasreitz.com.br (Let's Encrypt)",
+      "Reconstruir site com CMS moderno — código atual referencia IE8/IE9 (~2012)",
+      "Adicionar formulário de orçamento, JSON-LD LocalBusiness, Google Analytics"
+    ]
+  },
+  {
+    id:"santaisabel", name:"Madeireira Santa Isabel", city:"Palhoça", url:"", total:23.1, cls:"Crítico",
+    scores:{ui:3.4, ux:5.4, seo:6.7, conv:2.8, tech:1.8, rec:3.0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Presente (relevante)",
+      meta_desc:"Presente",
+      h1:"ZERO H1 ou H2 em toda a página",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"Nenhum WhatsApp funcional (widget presente mas não funciona)",
+      https:true,
+      cms:"Adobe Muse (descontinuado em 2018)",
+      imgs_total:"57", imgs_no_alt:"57 (100%)"
+    },
+    pro:[
+      "Heritage forte desde 1945 — quase 80 anos de história",
+      "Conteúdo de sustentabilidade e reflorestamento",
+      "Presença em redes sociais (links funcionais)"
+    ],
+    con:[
+      "Adobe Muse descontinuado em 2018 — CMS morto, impossível manter",
+      "Layout fixo com posicionamento absoluto — ZERO responsividade mobile",
+      "ZERO viewport meta tag — completamente inutilizável em celular",
+      "57 imagens sem alt text — 100%",
+      "ZERO formulários, ZERO WhatsApp funcional, ZERO mecanismo de orçamento",
+      "ZERO H1 ou H2 — hierarquia semântica inexistente",
+      "Design circa 2010 — severamente datado"
+    ],
+    fix:[
+      "Refazer o site do zero em plataforma moderna (WordPress ou Wix)",
+      "Prioridades do novo site: responsivo, WhatsApp fixo, formulário de orçamento",
+      "Implementar schema LocalBusiness e meta tags otimizadas",
+      "Adicionar catálogo de casas pré-fabricadas com fotos e preços"
+    ]
+  },
+  {
+    id:"baiasul", name:"Madeireira Baía Sul", city:"São José", url:"baiasul.com.br", total:19.5, cls:"Crítico",
+    scores:{ui:3.0, ux:5.6, seo:2.4, conv:3.0, tech:5.0, rec:0.5},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{
+      title:"Presente (genérico)",
+      meta_desc:"Ausente",
+      h1:"ZERO H1/H2",
+      schema:"Ausente",
+      form:"ZERO formulários",
+      whatsapp:"Botão flutuante com número direto",
+      https:true,
+      cms:"WebAcappella (gerado 2014)",
+      imgs_total:"1 (GIF de cabeçalho)", imgs_no_alt:"1"
+    },
+    pro:[
+      "HTTPS ativo",
+      "WhatsApp flutuante com número direto",
+      "Site extremamente leve (15KB)",
+      "3 telefones + 2 emails de contato",
+      "Menu com páginas dedicadas"
+    ],
+    con:[
+      "Sem viewport meta — COMPLETAMENTE quebrado em mobile",
+      "ZERO CTAs, ZERO formulários, ZERO captura de leads",
+      "ZERO H1/H2 e ZERO schema.org — SEO inexistente",
+      "APENAS 1 imagem no site inteiro — zero fotos de produtos",
+      "WebAcappella de 2014 — layout table/div fixo em 1021px — Web 1.0"
+    ],
+    fix:[
+      "Refazer o site do zero — WebAcappella de 2014 não é recuperável",
+      "Novo site precisa: responsivo, WhatsApp fixo, formulário, catálogo com fotos",
+      "Implementar schema LocalBusiness, meta description, H1/H2",
+      "Adicionar galeria de produtos com fotos reais de madeiras"
+    ]
+  },
+  {
+    id:"canaa", name:"Canaã Madeiras", city:"Biguaçu", url:"canaamadeirassc.com", total:0, cls:"Offline",
+    scores:{ui:0, ux:0, seo:0, conv:0, tech:0, rec:0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{},
+    pro:[],
+    con:["Domínio não resolve (DNS: ENOTFOUND) — provável domínio expirado"],
+    fix:["Verificar registro/renovação do domínio", "Restaurar hospedagem e DNS"]
+  },
+  {
+    id:"flordosol", name:"Madeireira Flor do Sol", city:"Palhoça", url:"madeireiraflordosol.com.br", total:0, cls:"Offline",
+    scores:{ui:0, ux:0, seo:0, conv:0, tech:0, rec:0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{},
+    pro:[],
+    con:["Domínio não resolve (DNS: ENOTFOUND) — provável domínio expirado"],
+    fix:["Verificar registro/renovação do domínio", "Restaurar hospedagem e DNS"]
+  },
+  {
+    id:"gmmadeiras", name:"GM Madeiras", city:"Palhoça", url:"gmmadeiras.com.br", total:0, cls:"Offline",
+    scores:{ui:0, ux:0, seo:0, conv:0, tech:0, rec:0},
+    maxes:{ui:15, ux:20, seo:19.5, conv:25, tech:10.5, rec:10},
+    tech_detail:{},
+    pro:[],
+    con:["Domínio não resolve (DNS: ENOTFOUND) — provável domínio expirado"],
+    fix:["Verificar registro/renovação do domínio", "Restaurar hospedagem e DNS"]
+  }
+];
+
+const PROBLEMS = [
+  {
+    title: "Meta description AUSENTE",
+    icon: "M", iconBg: "var(--red-light)", iconColor: "var(--red)",
+    desc: "Google gera snippet automático — sem controle sobre o que aparece na SERP. Impacta CTR diretamente.",
+    affected: ["santamadeira","madbiguacu","lokal","madefuturo","cambirela","ceratto","fontana","jlcorrea","madecor","palhocacasas","zcf","baiasul"],
+    fix: "Escrever meta description única por página, 150-160 chars, com cidade + produto principal + CTA. Ex: 'Madeireira [Nome] em [Cidade] — pinus, deck e esquadrias com entrega. Peça orçamento pelo WhatsApp.'"
+  },
+  {
+    title: "ZERO formulário de contato/orçamento",
+    icon: "F", iconBg: "var(--red-light)", iconColor: "var(--red)",
+    desc: "Captação de leads depende 100% do WhatsApp. Sem fallback para leads assíncronos, sem rastreamento de conversão, sem dados para CRM.",
+    affected: ["santamadeira","gilmar","madefuturo","cambirela","silva","ceratto","fontana","jlcorrea","madbiguacu","palhocacasas","zcf","reitz","santaisabel","baiasul"],
+    fix: "Adicionar formulário com campos: nome, telefone, tipo de madeira/produto, quantidade/medidas, mensagem. WordPress: Contact Form 7. Wix: formulário nativo. Integrar com Google Sheets ou CRM."
+  },
+  {
+    title: "ZERO dados estruturados (schema.org)",
+    icon: "S", iconBg: "var(--orange-light)", iconColor: "var(--orange)",
+    desc: "Sem JSON-LD LocalBusiness/Product — perde rich snippets (endereço, horário, avaliações) nos resultados do Google.",
+    affected: ["santamadeira","lokal","madefuturo","cambirela","silva","ceratto","fontana","jlcorrea","madecor","palhocacasas","zcf","reitz","santaisabel","baiasul"],
+    fix: "Implementar JSON-LD LocalBusiness com: nome, endereço, telefone, horário, coordenadas. WordPress: instalar Yoast SEO (gratuito). Outros: gerar via technicalseo.com/tools/schema-markup-generator."
+  },
+  {
+    title: "Hierarquia de headings quebrada (H1 ausente ou múltiplo)",
+    icon: "H", iconBg: "var(--orange-light)", iconColor: "var(--orange)",
+    desc: "Sem H1, com múltiplos H1, ou usando H3/div em vez de H1. Prejudica indexação e entendimento de conteúdo pelo Google.",
+    affected: ["santos","santamadeira","gilmar","lokal","madefuturo","cambirela","ceratto","fontana","jlcorrea","palhocacasas","reitz","santaisabel","baiasul","madbiguacu"],
+    fix: "Cada página deve ter EXATAMENTE 1 tag H1 descritiva com palavra-chave principal + localização. Ex: <h1>Madeireira [Nome] — [Produtos] em [Cidade] SC</h1>. Itens de lista devem ser H2/H3, nunca H1."
+  },
+  {
+    title: "Imagens sem alt text",
+    icon: "A", iconBg: "var(--orange-light)", iconColor: "var(--orange)",
+    desc: "Imagens sem atributo alt prejudicam acessibilidade (leitores de tela) e SEO de imagem (Google Imagens não indexa).",
+    affected: ["santamadeira","lokal","madefuturo","cambirela","silva","ceratto","jlcorrea","madecor","santaisabel","santos","madbiguacu","baiasul","zcf","fontana","gilmar"],
+    fix: "Preencher alt descritivo em cada imagem: '[Produto] — [Detalhe]. Ex: alt=\"Deck de pinus tratado 3x4m instalado em varanda — Madeireira [Nome]\"'. NÃO usar alt genérico como 'imagem' ou 'foto'."
+  },
+  {
+    title: "Sem preços ou faixas de preço",
+    icon: "P", iconBg: "var(--yellow-light)", iconColor: "var(--yellow)",
+    desc: "Visitante não consegue comparar ou estimar custo. Aumenta fricção e reduz conversão — muitos desistem antes de pedir orçamento.",
+    affected: ["santamadeira","gilmar","lokal","madefuturo","silva","fontana","jlcorrea","madecor","palhocacasas","zcf","reitz","santaisabel","baiasul"],
+    fix: "Adicionar faixas de preço: 'A partir de R$ XX/m²' ou 'R$ XX–YY por peça'. Não precisa ser preço fixo — faixa já reduz fricção e melhora SEO (schema Product com priceRange)."
+  },
+  {
+    title: "Catálogo de produtos inexistente ou raso",
+    icon: "C", iconBg: "var(--yellow-light)", iconColor: "var(--yellow)",
+    desc: "Sem páginas individuais de produto com fichas técnicas. Cliente não encontra o que busca, e Google não tem conteúdo para indexar por cauda longa.",
+    affected: ["gilmar","silva","ceratto","jlcorrea","madecor","madbiguacu","zcf","palhocacasas","reitz","santaisabel","baiasul"],
+    fix: "Criar página por categoria/produto: título descritivo, 3+ fotos, espécie, dimensões, tratamento, aplicação, faixa de preço. Cada página é uma oportunidade de SEO: 'Deck de Cumaru em Florianópolis'."
+  },
+  {
+    title: "Site sem HTTPS (HTTP puro)",
+    icon: "!", iconBg: "var(--red-light)", iconColor: "var(--red)",
+    desc: "Navegadores exibem 'Não Seguro'. Google penaliza diretamente no ranking. Formulários em HTTP expõem dados do cliente.",
+    affected: ["madecor","reitz"],
+    fix: "Instalar certificado SSL gratuito via Let's Encrypt. Maioria das hospedagens oferece 1-click SSL. Após ativar, redirecionar HTTP→HTTPS e atualizar canonical."
+  },
+  {
+    title: "CMS obsoleto ou descontinuado",
+    icon: "!", iconBg: "var(--red-light)", iconColor: "var(--red)",
+    desc: "CMS parado no tempo: sem atualizações de segurança, sem plugins modernos, sem suporte. Risco de vulnerabilidade e impossibilidade de evolução.",
+    affected: ["lokal","fontana","santaisabel","baiasul"],
+    fix: "Lokal: PHP-Fusion → WordPress. Fontana: atualizar WordPress de 2015 urgentemente. Santa Isabel: Adobe Muse (morto desde 2018) → site novo. Baía Sul: WebAcappella 2014 → site novo. Budget: R$2-5k em WordPress pronto."
+  },
+  {
+    title: "Site não responsivo / quebrado no mobile",
+    icon: "!", iconBg: "var(--red-light)", iconColor: "var(--red)",
+    desc: "Sem viewport meta ou layout fixo — site inutilizável em celular. 70%+ do tráfego é mobile no Brasil. Google usa mobile-first indexing.",
+    affected: ["santaisabel","baiasul"],
+    fix: "Se o CMS permite: adicionar <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> e converter layout para flexbox/grid. Se não permite (Muse, WebAcappella): refazer o site."
+  },
+  {
+    title: "Sem Google Analytics ou rastreamento",
+    icon: "T", iconBg: "var(--yellow-light)", iconColor: "var(--yellow)",
+    desc: "Sem métricas de tráfego, origem dos visitantes, taxa de conversão. Impossível saber o que funciona e o que não funciona.",
+    affected: ["ceratto","fontana","jlcorrea","reitz"],
+    fix: "Instalar Google Analytics 4 (gratuito) + Google Search Console. WordPress: plugin Site Kit by Google. Configurar evento de conversão para clique no WhatsApp."
+  }
+];
+
+// ===== RENDER =====
+function getClsClass(cls) {
+  if (cls === 'Bom') return 'cls-bom';
+  if (cls === 'Regular') return 'cls-regular';
+  if (cls === 'Offline' || cls.includes('offline')) return 'cls-offline';
+  if (cls.includes('Crít') || cls === 'Crítico') return 'cls-critico';
+  return 'cls-fraco';
+}
+
+function getScoreColor(score, max) {
+  const pct = max > 0 ? score / max : 0;
+  if (pct >= 0.7) return 'var(--bom)';
+  if (pct >= 0.5) return 'var(--regular)';
+  if (pct >= 0.3) return 'var(--fraco)';
+  return 'var(--critical)';
+}
+
+// Stats bar
+const active = DATA.filter(d => d.total > 0);
+const avgScore = active.length ? (active.reduce((s,d) => s+d.total, 0) / active.length).toFixed(1) : 0;
+const offline = DATA.filter(d => d.total === 0).length;
+const withHttps = active.filter(d => d.tech_detail.https === true || d.tech_detail.https === 'sim').length;
+const withForm = active.filter(d => {
+  const f = d.tech_detail.form || '';
+  return f && !f.includes('ZERO') && !f.includes('Nenhum') && !f.includes('AUSENTE') && !f.includes('ausente') && f !== '';
+}).length;
+
+document.getElementById('stats-bar').innerHTML = `
+  <div class="stat-card"><div class="label">Média geral</div><div class="value">${avgScore}</div><div class="detail">de 100 pontos</div></div>
+  <div class="stat-card"><div class="label">Sites ativos</div><div class="value">${active.length}</div><div class="detail">${offline} offline</div></div>
+  <div class="stat-card"><div class="label">Com HTTPS</div><div class="value">${withHttps}/${active.length}</div><div class="detail">${active.length - withHttps} sem certificado</div></div>
+  <div class="stat-card"><div class="label">Com formulário</div><div class="value">${withForm}/${active.length}</div><div class="detail">${active.length - withForm} sem captação</div></div>
+  <div class="stat-card"><div class="label">Melhor score</div><div class="value">${Math.max(...DATA.map(d=>d.total))}</div><div class="detail">${DATA.find(d=>d.total===Math.max(...DATA.map(x=>x.total))).name}</div></div>
+`;
+
+// Filters
+const cities = [...new Set(DATA.map(d => d.city))].sort();
+document.getElementById('filter-bar').innerHTML =
+  `<button class="filter-btn active" data-city="all">Todas</button>` +
+  cities.map(c => `<button class="filter-btn" data-city="${c}">${c}</button>`).join('');
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderRanking(btn.dataset.city);
+    renderDetails(btn.dataset.city);
+  });
+});
+
+function renderRanking(cityFilter) {
+  const filtered = cityFilter === 'all' ? DATA : DATA.filter(d => d.city === cityFilter);
+  const sorted = [...filtered].sort((a, b) => b.total - a.total);
+  document.getElementById('ranking-body').innerHTML = sorted.map((d, i) => {
+    const dims = ['ui','ux','seo','conv','tech','rec'];
+    return `<tr>
+      <td>${i + 1}</td>
+      <td><strong>${d.name}</strong>${d.url ? `<br><span style="font-size:0.72rem;color:var(--text-dim)">${d.url}</span>` : ''}</td>
+      <td>${d.city}</td>
+      <td><span class="cls-badge ${getClsClass(d.cls)}">${d.cls.replace('Não avaliável — site offline','Offline')}</span></td>
+      ${dims.map(dim => {
+        const score = d.scores[dim];
+        const max = d.maxes[dim];
+        const pct = max > 0 ? Math.round(score / max * 100) : 0;
+        const color = getScoreColor(score, max);
+        return `<td class="num"><span class="score-bar" style="width:${pct * 0.4}px;background:${color}"></span>${score > 0 ? score.toFixed(1) : '—'}</td>`;
+      }).join('')}
+      <td class="num" style="font-weight:800;color:${getScoreColor(d.total, 100)}">${d.total > 0 ? d.total.toFixed(1) : '—'}</td>
+    </tr>`;
+  }).join('');
+}
+
+// Problems
+document.getElementById('problem-grid').innerHTML = PROBLEMS.map(p => {
+  const allNames = DATA.map(d => d.id);
+  return `<div class="problem-card">
+    <div class="p-header">
+      <div class="p-icon" style="background:${p.iconBg};color:${p.iconColor};font-weight:800">${p.icon}</div>
+      <div class="p-title">${p.title}</div>
+      <div class="p-count">${p.affected.length} de ${active.length} sites</div>
+    </div>
+    <div class="p-desc">${p.desc}</div>
+    <div class="affected-list">
+      ${active.map(d => {
+        const has = p.affected.includes(d.id);
+        const name = d.name.replace('Madeireira ','').replace('Madeiras','').replace(' e Esquadrias','').trim();
+        return `<span class="affected-chip ${has ? 'has-problem' : ''}">${name}</span>`;
+      }).join('')}
+    </div>
+    <div class="fix-box"><strong>Como corrigir:</strong> ${p.fix}</div>
+  </div>`;
+}).join('');
+
+// Site details
+function renderDetails(cityFilter) {
+  const filtered = cityFilter === 'all' ? DATA : DATA.filter(d => d.city === cityFilter);
+  const sorted = [...filtered].sort((a, b) => b.total - a.total);
+  document.getElementById('site-details').innerHTML = sorted.map((d, i) => {
+    const dims = [
+      {key:'ui', label:'UI/Design', max: d.maxes.ui},
+      {key:'ux', label:'UX', max: d.maxes.ux},
+      {key:'seo', label:'SEO', max: d.maxes.seo},
+      {key:'conv', label:'Conversão', max: d.maxes.conv},
+      {key:'tech', label:'Técnico', max: d.maxes.tech},
+      {key:'rec', label:'Recursos', max: d.maxes.rec}
+    ];
+    const td = d.tech_detail || {};
+    return `<div class="site-detail" id="detail-${d.id}">
+      <div class="site-detail-header" onclick="this.parentElement.classList.toggle('open')">
+        <div class="rank">${i + 1}</div>
+        <div class="info">
+          <div class="name">${d.name}</div>
+          <div class="url-city">${d.url || 'Sem site'} — ${d.city}</div>
+        </div>
+        <span class="cls-badge ${getClsClass(d.cls)}" style="margin-right:12px">${d.cls.replace('Não avaliável — site offline','Offline')}</span>
+        <div class="score-total" style="color:${getScoreColor(d.total, 100)}">${d.total > 0 ? d.total.toFixed(1) : '—'}</div>
+        <div class="chevron">▼</div>
+      </div>
+      <div class="site-detail-body">
+        <div class="score-breakdown">
+          ${dims.map(dim => `<div class="score-dim">
+            <div class="dim-label">${dim.label}</div>
+            <div class="dim-value" style="color:${getScoreColor(d.scores[dim.key], dim.max)}">${d.scores[dim.key] > 0 ? d.scores[dim.key].toFixed(1) : '—'}</div>
+            <div class="dim-max">de ${dim.max}</div>
+          </div>`).join('')}
+        </div>
+
+        ${Object.keys(td).length > 0 ? `
+        <div class="detail-section-title">Dados Técnicos</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:0.82rem;margin-bottom:12px">
+          ${td.title ? `<div><strong>Title:</strong> <span style="color:var(--text-muted)">${td.title}</span></div>` : ''}
+          ${td.meta_desc ? `<div><strong>Meta desc:</strong> <span style="color:${td.meta_desc.includes('Ausente') ? 'var(--red)' : 'var(--text-muted)'}">${td.meta_desc}</span></div>` : ''}
+          ${td.h1 ? `<div><strong>H1:</strong> <span style="color:${td.h1.includes('Ausente') || td.h1.includes('ZERO') ? 'var(--red)' : 'var(--text-muted)'}">${td.h1}</span></div>` : ''}
+          ${td.schema ? `<div><strong>Schema:</strong> <span style="color:${td.schema.includes('Ausente') ? 'var(--red)' : 'var(--accent)'}">${td.schema}</span></div>` : ''}
+          ${td.form ? `<div><strong>Formulário:</strong> <span style="color:${td.form.includes('ZERO') || td.form.includes('Nenhum') || td.form.includes('AUSENTE') ? 'var(--red)' : 'var(--accent)'}">${td.form}</span></div>` : ''}
+          ${td.whatsapp ? `<div><strong>WhatsApp:</strong> <span style="color:var(--text-muted)">${td.whatsapp}</span></div>` : ''}
+          ${td.cms ? `<div><strong>CMS:</strong> <span style="color:var(--text-muted)">${td.cms}</span></div>` : ''}
+          ${td.https !== undefined ? `<div><strong>HTTPS:</strong> <span style="color:${td.https === true || td.https === 'sim' ? 'var(--accent)' : 'var(--red)'}">${td.https === true ? 'Sim' : td.https === false ? 'NÃO' : td.https}</span></div>` : ''}
+          ${td.imgs_total ? `<div><strong>Imagens:</strong> <span style="color:var(--text-muted)">${td.imgs_total} total, ${td.imgs_no_alt} sem alt</span></div>` : ''}
+        </div>` : ''}
+
+        ${d.pro.length > 0 || d.con.length > 0 ? `
+        <div class="pro-con-grid">
+          <div>
+            <div class="detail-section-title" style="color:var(--accent)">Pontos fortes</div>
+            <ul class="pro-list">${d.pro.map(p => `<li>${p}</li>`).join('')}</ul>
+          </div>
+          <div>
+            <div class="detail-section-title" style="color:var(--red)">Problemas encontrados</div>
+            <ul class="con-list">${d.con.map(c => `<li>${c}</li>`).join('')}</ul>
+          </div>
+        </div>` : ''}
+
+        ${d.fix.length > 0 ? `
+        <div class="detail-section-title" style="color:var(--accent)">Ações recomendadas (por prioridade)</div>
+        <ul class="fix-list">${d.fix.map((f, j) => `<li data-n="${j + 1}.">${f}</li>`).join('')}</ul>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+renderRanking('all');
+renderDetails('all');
+</script>
