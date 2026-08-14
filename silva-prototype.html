@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madeireira Silva | Madeiras em Grande Florianopolis, SC</title>
+  <meta name="description" content="Madeireira Silva e especialista em madeiras de alta qualidade na regiao de Grande Florianopolis, SC. Entre em contato e peca um orcamento!">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Madeireira Silva | Madeiras em Grande Florianopolis, SC">
+  <meta property="og:description" content="Madeireira Silva e especialista em madeiras de alta qualidade na regiao de Grande Florianopolis, SC. Entre em contato e peca um orcamento!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://madeireirasilva.ind.br/">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Crect width='1200' height='630' fill='%233E2723'/%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='64' fill='%23fff' text-anchor='middle'%3EMadeireira Silva%3C/text%3E%3C/svg%3E">
+
+  <link rel="canonical" href="https://madeireirasilva.ind.br/">
+
+  <style>
+    :root {
+      --primary: #3E2723;
+      --secondary: #2E7D32;
+      --bg: #FFFFFF;
+      --bg-alt: #FDFBF7;
+      --bg-dark: #1C110C;
+      --text: #2A1A12;
+      --text-mid: #5A4033;
+      --text-light: #8A6D5E;
+      --border: #E8E1DA;
+      --card-bg: #FFFFFF;
+      --shadow: rgba(42, 26, 18, 0.08);
+      --green-wa: #25D366;
+      --focus: #3E2723;
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #181512;
+      --bg-alt: #221D19;
+      --bg-dark: #0D0A08;
+      --text: #F5EFEB;
+      --text-mid: #D6C8C0;
+      --text-light: #A8958B;
+      --border: #3D322B;
+      --card-bg: #221D19;
+      --shadow: rgba(0, 0, 0, 0.3);
+      --focus: #FFB74D;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--secondary);
+    }
+
+    /* Accessibility */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 16px;
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 999;
+      font-weight: 600;
+    }
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background-color: var(--bg-dark);
+      color: var(--text-mid);
+      font-size: 0.85rem;
+      padding: 8px 0;
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .top-bar-left, .top-bar-right {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .top-bar a {
+      color: #F5EFEB;
+    }
+
+    /* Nav */
+    .nav {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 8px var(--shadow);
+      z-index: 100;
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+    .nav-brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      font-weight: 500;
+      color: var(--text-mid);
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .nav-cta {
+      background-color: var(--primary);
+      color: #FFF !important;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+    }
+    .nav-cta:hover {
+      background-color: var(--secondary);
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 200;
+    }
+    .mobile-menu-panel {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 280px;
+      background: var(--bg);
+      padding: 24px;
+      box-shadow: -4px 0 20px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mobile-menu-close {
+      align-self: flex-end;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .mobile-menu-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .mobile-menu-links a {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text);
+      padding: 4px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--bg-alt) 0%, var(--border) 100%);
+      text-align: center;
+    }
+    .hero-label {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-sub {
+      font-size: 1.25rem;
+      color: var(--text-mid);
+      max-width: 600px;
+      margin: 0 auto 32px auto;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary {
+      background-color: var(--primary);
+      color: #fff !important;
+    }
+    .btn-primary:hover {
+      background-color: var(--secondary);
+    }
+    .btn-secondary {
+      background-color: var(--green-wa);
+      color: #fff !important;
+    }
+    .btn-secondary:hover {
+      opacity: 0.9;
+    }
+    .hero-trust {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    /* Section */
+    .section {
+      padding: 80px 0;
+    }
+    .section-alt {
+      padding: 80px 0;
+      background-color: var(--bg-alt);
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-title {
+      font-size: 2.25rem;
+      margin-top: 8px;
+    }
+
+    /* About Grid */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .about-content h3 {
+      font-size: 1.75rem;
+      margin-bottom: 16px;
+    }
+    .about-content p {
+      margin-bottom: 16px;
+      color: var(--text-mid);
+    }
+
+    /* Products Catalog */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 32px;
+    }
+    .product-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+    .product-image-placeholder {
+      height: 200px;
+      background: linear-gradient(135deg, var(--border) 0%, var(--bg-alt) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: var(--text-light);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding: 16px;
+      text-align: center;
+    }
+    .product-info {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .product-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .product-desc {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .product-badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .product-badge {
+      background: var(--bg-alt);
+      color: var(--primary);
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+    .product-card .btn {
+      width: 100%;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+    .testimonial-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+    .testimonial-rating {
+      color: #FFB300;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+    }
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 16px;
+      color: var(--text-mid);
+    }
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: var(--bg-alt);
+      border: none;
+      padding: 20px;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-answer {
+      display: none;
+      padding: 20px;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      color: var(--text-mid);
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+
+    /* Lead Form */
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      align-items: flex-start;
+    }
+    @media (max-width: 768px) {
+      .form-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-info h3 {
+      font-size: 1.75rem;
+      margin-bottom: 16px;
+    }
+    .form-info p {
+      margin-bottom: 24px;
+      color: var(--text-mid);
+    }
+    .form-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px var(--shadow);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: 2px solid var(--primary);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 480px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-submit {
+      width: 100%;
+      padding: 14px;
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .form-submit:hover {
+      background-color: var(--secondary);
+    }
+
+    /* Map */
+    .map-section iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      display: block;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--bg-dark);
+      color: var(--text-mid);
+      padding: 64px 0 24px 0;
+      border-top: 1px solid var(--border);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .footer-brand h4 {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .footer-brand p {
+      font-size: 0.95rem;
+      max-width: 320px;
+    }
+    .footer h5 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .footer-links a {
+      color: var(--text-light);
+    }
+    .footer-links a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    /* Float Button */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--green-wa);
+      color: #fff;
+      padding: 14px 24px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      z-index: 150;
+    }
+    @media (max-width: 480px) {
+      .wa-float-text {
+        display: none;
+      }
+      .wa-float {
+        padding: 14px;
+        border-radius: 50%;
+      }
+    }
+
+    /* Back To Top */
+    .back-top {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      background: var(--bg-alt);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s;
+      z-index: 150;
+    }
+    .back-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Pular para o conteudo principal</a>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span>📍 Grande Florianopolis, SC</span>
+        <span>📞 <a href="tel:554832471377">(48) 3247-1377</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span>📬 <a href="mailto:contato@madeiras.com.br">contato@madeiras.com.br</a></span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema escuro/claro">🌓</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="nav-brand">Madeireira Silva</div>
+      <nav aria-label="Menu principal">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre nos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Duvidas</a></li>
+          <li><a href="#contato" class="nav-cta">Solicitar Orcamento</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegacao mobile">
+    <div class="mobile-menu-panel">
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">&#10005;</button>
+      <ul class="mobile-menu-links">
+        <li><a href="#sobre">Sobre nos</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">Duvidas</a></li>
+        <li><a href="#contato" class="nav-cta">Solicitar Orcamento</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Destaque principal">
+    <div class="container">
+      <div class="hero-label">Madeiras Selecionadas</div>
+      <h1>As Melhores Madeiras para seu Projeto em Grande Florianopolis</h1>
+      <p class="hero-sub">Transformando lares com madeira sustentável</p>
+      <div class="hero-ctas">
+        <a href="#contato" class="btn btn-primary">Solicite um Orcamento</a>
+        <a href="https://api.whatsapp.com/send?phone=555548998585524&text=Ola,%20gostaria%20de%20um%20orcamento%20de%20madeiras" target="_blank" rel="noopener" class="btn btn-secondary">Conversar no WhatsApp</a>
+      </div>
+      <div class="hero-trust">
+        <span>✓ 57 anos de experiência (site menciona &quot;57 anos&quot;)</span>
+        <span>✓ Entrega Rapida e Segura</span>
+        <span>✓ Atendimento Personalizado</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre" aria-label="Sobre a empresa">
+      <div class="container about-grid">
+        <div class="about-content">
+          <div class="hero-label">Nossa Historia</div>
+          <h3>Tradicao, Compromisso e Qualidade</h3>
+          <p>Iniciada em 1960, a empresa evoluiu para se tornar referência no setor madeireiro. Em 1968, iniciamos as atividades de serraria.</p>
+          <p>Gestão da terceira geração da Família Silva.</p>
+          <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+        </div>
+        <div class="about-features" style="display: flex; flex-direction: column; gap: 24px;">
+          <div style="background: var(--bg-alt); padding: 24px; border-radius: 8px; border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 8px; color: var(--primary);">✓ Estrutura Completa</h4>
+            <p style="font-size: 0.95rem; color: var(--text-mid);">Estoque diversificado e frota preparada para garantir a entrega mais rapida da regiao metropolitana.</p>
+          </div>
+          <div style="background: var(--bg-alt); padding: 24px; border-radius: 8px; border: 1px solid var(--border);">
+            <h4 style="margin-bottom: 8px; color: var(--primary);">✓ Madeira de Procedencia</h4>
+            <p style="font-size: 0.95rem; color: var(--text-mid);">Sustentabilidade e respeito ao meio ambiente com madeiras de reflorestamento e manejo florestal certificado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="section-alt" id="produtos" aria-label="Catalogo de produtos">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-label">Nosso Catalogo</div>
+          <h2 class="section-title">Madeiras Disponiveis Sob Consulta</h2>
+        </div>
+        <div class="products-grid">
+
+          <div class="product-card">
+            <div class="product-image-placeholder">
+              <span style="font-size: 2.5rem; margin-bottom: 8px;" aria-hidden="true">🪵</span>
+              <span>Foto do produto: Angelim Pedra</span>
+            </div>
+            <div class="product-info">
+              <h3>Angelim Pedra</h3>
+              <p class="product-desc">Cerne marrom amarelado, textura grossa, excelente para construcao civil e marcenaria.</p>
+              <div class="product-badge-list">
+                <span class="product-badge">Construcao</span><span class="product-badge">Marcenaria</span><span class="product-badge">Alta Durabilidade</span>
+              </div>
+              <a href="#contato" class="btn btn-primary product-quote-trigger" data-product="Angelim Pedra">Pedir Orcamento</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-placeholder">
+              <span style="font-size: 2.5rem; margin-bottom: 8px;" aria-hidden="true">🪵</span>
+              <span>Foto do produto: Cambara</span>
+            </div>
+            <div class="product-info">
+              <h3>Cambara</h3>
+              <p class="product-desc">Cerne amarelo-claro a bege-claro, de textura fina, muito indicada para coberturas e esquadrias.</p>
+              <div class="product-badge-list">
+                <span class="product-badge">Esquadrias</span><span class="product-badge">Coberturas</span><span class="product-badge">Resistente</span>
+              </div>
+              <a href="#contato" class="btn btn-primary product-quote-trigger" data-product="Cambara">Pedir Orcamento</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-placeholder">
+              <span style="font-size: 2.5rem; margin-bottom: 8px;" aria-hidden="true">🪵</span>
+              <span>Foto do produto: Itauba</span>
+            </div>
+            <div class="product-info">
+              <h3>Itauba</h3>
+              <p class="product-desc">Amarelo-olivaceo, muito pesada e extremamente duravel para pontes, vigas e decks.</p>
+              <div class="product-badge-list">
+                <span class="product-badge">Decks</span><span class="product-badge">Vigas</span><span class="product-badge">Alta Densidade</span>
+              </div>
+              <a href="#contato" class="btn btn-primary product-quote-trigger" data-product="Itauba">Pedir Orcamento</a>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image-placeholder">
+              <span style="font-size: 2.5rem; margin-bottom: 8px;" aria-hidden="true">🪵</span>
+              <span>Foto do produto: Pinus Tratado</span>
+            </div>
+            <div class="product-info">
+              <h3>Pinus Tratado</h3>
+              <p class="product-desc">Pinus autoclavado sob pressao, ideal para deck, cercas, pergolados e estruturas externas.</p>
+              <div class="product-badge-list">
+                <span class="product-badge">Deck</span><span class="product-badge">Autoclave</span><span class="product-badge">Ecológico</span>
+              </div>
+              <a href="#contato" class="btn btn-primary product-quote-trigger" data-product="Pinus Tratado">Pedir Orcamento</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos" aria-label="Depoimentos de clientes">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-label">O que dizem sobre nos</div>
+          <h2 class="section-title">Avaliacoes de nossos clientes</h2>
+        </div>
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-text">"Atendimento excelente! As madeiras vieram todas no tamanho correto e de altissima qualidade."</p>
+            <div class="testimonial-author">- Carlos Eduardo</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-text">"Muito atenciosos, entrega rapida e preco super justo. Recomendo com certeza!"</p>
+            <div class="testimonial-author">- Mariana Santos</div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-rating" aria-hidden="true">★★★★★</div>
+            <p class="testimonial-text">"Excelente parceiro para nossas obras. Qualidade garantida e cumprimento rigoroso dos prazos."</p>
+            <div class="testimonial-author">- Eng. Roberto Silva</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-alt" id="faq" aria-label="Duvidas frequentes">
+      <div class="container">
+        <div class="section-header">
+          <div class="hero-label">FAQ</div>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Voces entregam na minha regiao?
+              <span>▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Atendemos toda a regiao de Grande Florianopolis, SC com frota propria e entrega programada.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Como posso solicitar um orcamento?
+              <span>▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Voce pode preencher o formulario de orcamento nesta pagina ou entrar em contato direto pelo WhatsApp. Responderemos o mais breve possivel.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              As madeiras possuem certificado?
+              <span>▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Trabalhamos exclusivamente com madeiras de reflorestamento e de manejo florestal devidamente autorizado e de procedencia confirmada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORCAMENTO / CONTATO -->
+    <section class="section" id="contato" aria-label="Solicitacao de orcamento">
+      <div class="container form-layout">
+        <div class="form-info">
+          <div class="hero-label">Contato</div>
+          <h3>Faca seu pedido sem compromisso</h3>
+          <p>Preencha os dados ao lado e nossa equipe comercial analisara suas necessidades e entrara em contato com um orcamento detalhado e os melhores precos do mercado.</p>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 16px;">
+            <div>
+              <strong>Endereço:</strong><br>
+              <p style="color: var(--text-mid);"></p>
+            </div>
+            <div>
+              <strong>Telefone Comercial:</strong><br>
+              <a href="tel:554832471377">(48) 3247-1377</a>
+            </div>
+
+            <div>
+              <strong>E-mail:</strong><br>
+              <a href="mailto:contato@madeiras.com.br">contato@madeiras.com.br</a>
+            </div>
+          </div>
+        </div>
+        <div class="form-card">
+          <form id="quoteForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome completo *</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+              </div>
+              <div class="form-group">
+                <label for="telefone">WhatsApp / Celular *</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(48) 99999-9999">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade *</label>
+              <input type="text" id="cidade" name="cidade" required placeholder="Sua cidade - UF">
+            </div>
+            <div class="form-group">
+              <label for="interesse">Produto de Interesse</label>
+              <select id="interesse" name="interesse">
+                <option value="">Selecione...</option>
+                <option value="Angelim Pedra">Angelim Pedra</option>
+<option value="Cambara">Cambara</option>
+<option value="Itauba">Itauba</option>
+<option value="Pinus Tratado">Pinus Tratado</option>
+
+                <option value="Outro">Outro produto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem / Observacoes *</label>
+              <textarea id="mensagem" name="mensagem" required placeholder="Descreva as medidas, quantidades ou detalhes do seu projeto..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="form-submit">Enviar Pedido de Orcamento</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="map-section" aria-label="Mapa de Localizacao">
+    <div style="background-color: var(--border); padding: 40px; text-align: center; color: var(--text-mid); font-weight: bold; border-top: 1px solid var(--border);">
+      📍  (Localizado na regiao de Grande Florianopolis, SC)
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>Madeireira Silva</h4>
+        <p>Especialistas em madeiras de alta qualidade e atendimento dedicado. Atendendo toda a regiao metropolitana.</p>
+      </div>
+      <div>
+        <h5>Navegacao</h5>
+        <ul class="footer-links">
+          <li><a href="#sobre">Sobre nos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul class="footer-links">
+          <li>📞 <a href="tel:554832471377">(48) 3247-1377</a></li>
+          <li>📬 <a href="mailto:contato@madeiras.com.br">contato@madeiras.com.br</a></li>
+          <li>📍 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Madeireira Silva. Todos os direitos reservados. Foco em Qualidade e Sustentabilidade.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA BUTTON -->
+  <a href="https://api.whatsapp.com/send?phone=555548998585524&text=Ola,%20gostaria%20de%20solicitar%20um%20orcamento" class="wa-float" target="_blank" rel="noopener" aria-label="Enviar mensagem no WhatsApp">
+    <span class="wa-float-text">Fale Conosco pelo WhatsApp</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">&#9650;</button>
+
+  <script>
+    // Theme toggle logic
+    const themeToggle = document.getElementById('themeToggle');
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    let currentTheme = localStorage.getItem('theme') || systemTheme;
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Nav mobile toggler
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.style.display = 'block';
+      navToggle.setAttribute('aria-expanded', 'true');
+    });
+
+    const closeMenu = () => {
+      mobileMenu.style.display = 'none';
+      navToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    mobileMenuClose.addEventListener('click', closeMenu);
+    mobileMenu.addEventListener('click', (e) => {
+      if (e.target === mobileMenu) closeMenu();
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) {
+          item.classList.add('open');
+          button.setAttribute('aria-expanded', 'true');
+        } else {
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // Back to top scroll handler
+    const backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backTop.classList.add('visible');
+      } else {
+        backTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Product button event trigger (autoselect inside form)
+    document.querySelectorAll('.product-quote-trigger').forEach(button => {
+      button.addEventListener('click', () => {
+        const prodId = button.getAttribute('data-product');
+        const select = document.getElementById('interesse');
+        if (select) {
+          select.value = prodId;
+        }
+      });
+    });
+
+    // Form submission validation
+    const form = document.getElementById('quoteForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let isValid = true;
+      const requiredInputs = form.querySelectorAll('[required]');
+
+      requiredInputs.forEach(input => {
+        if (!input.value.trim()) {
+          input.style.borderColor = '#C62828';
+          isValid = false;
+        } else {
+          input.style.borderColor = '';
+        }
+      });
+
+      if (isValid) {
+        const submitBtn = form.querySelector('.form-submit');
+        submitBtn.textContent = 'Mensagem Enviada com Sucesso!';
+        submitBtn.style.backgroundColor = 'var(--green-wa)';
+        setTimeout(() => {
+          submitBtn.textContent = 'Enviar Pedido de Orcamento';
+          submitBtn.style.backgroundColor = '';
+          form.reset();
+        }, 3000);
+      }
+    });
+  </script>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Madeireira Silva",
+    "description": "Madeireira Silva e especialista em madeiras de alta qualidade na regiao de Grande Florianopolis, SC. Entre em contato e peca um orcamento!",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Grande Florianopolis, SC",
+      "addressCountry": "BR"
+    },
+    "telephone": "(48) 3247-1377",
+    "email": "contato@madeiras.com.br",
+    "url": "https://madeireirasilva.ind.br/"
+  }
+  </script>
+
+</body>
+</html>
